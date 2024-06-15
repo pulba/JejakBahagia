@@ -2,11 +2,12 @@
 layout: '../demo/wedding-4.astro'
 slug: 'posts/wedding-4'
 title: 'Wedding-4'
-type: 'Diamond 03'
+type: 'Diamond - 03'
+diamond: 3
 desc: 'Tema Diamond'
 countdown: "June 5, 2025 15:37:25"
 price: 'Rp 99.000'
-unprice: 'Rp 150.000'
+unprice: 'Rp 200.000'
 number: 3
 img:
   url: '/assets/demo-4.webp'

@@ -41,11 +41,19 @@ import { Icon } from 'astro-iconify';
     urlParams.append('url', 'jejakbahagia.com');
     const newUrl = `${window.location.origin}${window.location.pathname}?${urlParams.toString()}`;
     console.log(newUrl);
-    
+
+
+    function capitalizeAllWords(sentence) {
+    let words = sentence.toLowerCase().split(' ');
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    return words.join(' ');
+    }
 
   function updateMessage() {
-    var username = document.getElementById("username").value.trim();
-    var Penerima = document.getElementById("Penerima").value.trim();
+    var username = capitalizeAllWords(document.getElementById("username").value.trim());
+    var Penerima = capitalizeAllWords(document.getElementById("Penerima").value.trim());
     var detailURL = urlValue;
     var message = `*Kepada Yth.*
 Bapak/Ibu/Saudara/i 

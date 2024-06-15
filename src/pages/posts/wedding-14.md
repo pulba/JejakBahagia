@@ -2,10 +2,11 @@
 layout: '../demo/wedding-14.astro'
 slug: 'posts/wedding-14'
 title: 'Wedding-14'
-type: 'Exlusive 02'
+type: 'Exlusive - 02'
+exclusive: 5
 desc: 'Tema Exlusive'
 price: 'Rp 149.000'
-unprice: 'Rp 200.000'
+unprice: 'Rp 300.000'
 countdown: Jun 26, 2024 15:37:25
 number: 4
 img:

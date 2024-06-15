@@ -2,11 +2,12 @@
 layout: '../demo/wedding-12.astro'
 slug: 'posts/wedding-12'
 title: 'Wedding-12'
-type: 'Exlusive 01'
+type: 'Exlusive - 01'
+exclusive: 4
 desc: 'Tema Exlusive'
 countdown: "June 5, 2025 15:37:25"
 price: 'Rp 149.000'
-unprice: 'Rp 200.000'
+unprice: 'Rp 300.000'
 number: 4
 img:
   url: '/assets/demo-12.webp'

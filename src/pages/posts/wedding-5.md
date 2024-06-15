@@ -2,11 +2,12 @@
 layout: '../demo/wedding-5.astro'
 slug: 'posts/wedding-5'
 title: 'Wedding-5'
-type: 'Silver 03'
+type: 'Silver - 03'
+silver: 2
 desc: 'Tema Silver'
 countdown: "June 5, 2025 15:37:25"
 price: 'Rp 75.000'
-unprice: 'Rp 100.000'
+unprice: 'Rp 150.000'
 number: 2
 img:
   url: '/assets/demo-5.webp'

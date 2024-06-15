@@ -3,10 +3,11 @@ layout: '../demo/wedding-13.astro'
 slug: 'posts/wedding-13'
 title: 'Wedding-13'
 type: 'Tanpa Foto'
+nofoto: 5
 desc: 'Tanpa Foto'
 countdown: "June 5, 2025 15:37:25"
 price: 'Rp 49.000'
-unprice: 'Rp 80.000'
+unprice: 'Rp 100.000'
 number: 5
 img:
   url: '/assets/demo-13.webp'

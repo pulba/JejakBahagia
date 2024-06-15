@@ -2,8 +2,11 @@
 layout: "../demo/ultah-1.astro"
 title: "Kezia Anabel"
 slug: "undangan/kezia"
-type: "Tanpa Foto"
+type: "Birthday"
+ultah: 6
 desc: "Tema Ulang Tahun"
+price: 'Rp 75.000'
+unprice: 'Rp 150.000'
 img:
   url: "/assets/demo-ultah.webp"
 

@@ -2,11 +2,12 @@
 layout: '../demo/wedding-8.astro'
 slug: 'posts/wedding-8'
 title: 'Wedding-8'
-type: 'Basic 02'
+type: 'Basic - 02'
+basic: 1
 desc: 'Tema Basic 02'
 countdown: "June 5, 2025 15:37:25"
 price: 'Rp 49.000'
-unprice: 'Rp 80.000'
+unprice: 'Rp 100.000'
 number: 1
 img:
   url: '/assets/demo-8.webp'
