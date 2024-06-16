@@ -1,5 +1,5 @@
 ---
-layout: "../demo/ultah-1.astro"
+layout: "../demobd/ultah-1.astro"
 title: "Kezia Anabel"
 slug: "undangan/kezia"
 type: "Tanpa Foto"

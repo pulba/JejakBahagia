@@ -24,7 +24,7 @@ before: 'before:bg-sky-800'
 
 # Dekor
 dekorfs: '/assets/dekor38.webp'
-dekorsc: '/assets/dekor31.webp'
+dekorsc: '/assets/dekor48.webp'
 dekorth: '/assets/dekor39.webp'
 
 # Img kedua mempelai
@@ -32,16 +32,16 @@ pm1: '/assets/oca-tito1.webp'
 pm2: '/assets/oca-tito2.webp'
 
 # Img tambahan
-add1: '/assets/oca-tito2.webp'
+add1: '/assets/oca-tito3.webp'
 add2: '/assets/img-4.webp'
 
 # Data mempelai
 male: "Tito"
 ml: "T"
-fullmale: "Tito Sukoco.A.Md"
+fullmale: "Tito Sukoco, A.Md"
 female: "Feny"
 fml: "F"
-fullfemale: "Feny Dwi Fandi"
+fullfemale: "Feny Dwi F."
 date: "Rabu, 26 Juni 2024"
 countdown: Jun 26, 2024 09:00:00
 
