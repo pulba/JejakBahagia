@@ -10,7 +10,7 @@ price: 'Rp 49.000'
 unprice: 'Rp 100.000'
 number: 1
 img:
-  url: '/assets/demo-1.webp'
+  url: '/assets/demo-3.webp'
   alt: jejak bahagia
 
 #colors
