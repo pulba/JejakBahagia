@@ -45,11 +45,17 @@ import { Icon } from 'astro-iconify';
     const newUrl = `${window.location.origin}${window.location.pathname}?${urlParams.toString()}`;
     console.log(newUrl);
     
-
+    function capitalizeAllWords(sentence) {
+    let words = sentence.toLowerCase().split(' ');
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    return words.join(' ');
+    }
   function updateMessage() {
-    var femaleName = document.getElementById("female").value.trim();
-    var maleName = document.getElementById("male").value.trim();
-    var Penerima = document.getElementById("Penerima").value.trim();
+    var femaleName = capitalizeAllWords(document.getElementById("female").value.trim());
+    var maleName = capitalizeAllWords(document.getElementById("male").value.trim());
+    var Penerima = capitalizeAllWords(document.getElementById("Penerima").value.trim());
     var detailURL = urlValue;
     var message = `*Kepada Yth.*
 Bapak/Ibu/Saudara/i 

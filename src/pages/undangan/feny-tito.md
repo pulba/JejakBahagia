@@ -51,8 +51,8 @@ parentmale: "Alm. Bapak Marsoko & Alm. Ibu Komalasari"
 parentfemale: "Bapak Suwandi & Ibu Siti Musrifah"
 instagrammale: "tito2767"
 instagramfemale: "fenyocca833"
-citymale: "Bandung"
-cityfemale: "Banyuwangi"
+citymale: "BANDUNG"
+cityfemale: "BANYUWANGI"
 music: "oca-tito"
 
 # Name bank

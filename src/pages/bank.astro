@@ -1,0 +1,48 @@
+---
+import Page from '../layouts/page.astro';
+import '@fontsource/poppins';
+import Payment from '../layouts/payment.astro'
+---
+
+<Page title="Harga" desc="Ini halaman harga dari undangan jejak bahagia" subs="Apapun Paketnya Tetep Ramah Dikantong">
+    
+  <section class="animasi9 relative bg-cover bg-no-repeat bg-center bg-fixed py-20 overflow-hidden">
+    <div class="container px-6 text-center mx-auto relative z-10">
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-center w-full max-w-screen-md mx-auto">
+        <div class="relative py-8 px-4 md:px-16 mx-auto mt-16 w-full max-w-xs justify-center md:flex mx-auto gap-5 bg-white rounded-lg border-2 shadow-lg">
+          <div class="text-center font-poppins flex flex-col items-center">
+            <img class="h-auto max-w-24" src="/assets/bri.png" alt="JejakBahagia">
+            <div class="mt-4 font-josefin">
+              <p class="max-w-prose">Syaiful Bahri</p>
+              <span class="copy-content font-bold">565601016109531</span>
+              <div class="btn-copy pt-5">
+                <button class="px-5 py-2 rounded-lg bg-pink-600 text-white">Copy Rekening</button>
+              </div>
+              <span class="copy-message absolute hidden inset-x-0">Rekening dicopy</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative py-8 px-4 md:px-16 mx-auto mt-16 w-full max-w-xs justify-center md:flex mx-auto gap-5 bg-white rounded-lg border-2 shadow-lg">
+          <div class="text-center font-poppins flex flex-col items-center">
+            <div class="flex flex-col min-[350px]:flex-row gap-x-2 gap-y-4 justify-center items-center *:h-auto *:max-w-16">
+              <img class="" src="/assets/gopay.png" alt="JejakBahagia">
+              <img class="" src="/assets/shopee.png" alt="JejakBahagia">
+              <img class="" src="/assets/dana.png" alt="JejakBahagia">
+            </div>
+            <div class="mt-4 font-josefin">
+              <p class="max-w-prose">Syaiful Bahri</p>
+              <span class="copy-content font-bold">085840294989</span>
+              <div class="btn-copy pt-5">
+                <button class="px-5 py-2 rounded-lg bg-pink-600 text-white">Copy Rekening</button>
+              </div>
+              <span class="copy-message absolute hidden inset-x-0">Rekening dicopy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+    <Payment /> 
+</Page>
