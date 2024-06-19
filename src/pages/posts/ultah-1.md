@@ -1,7 +1,7 @@
 ---
 layout: "../demobd/ultah-1.astro"
-title: "Kezia Anabel"
-slug: "undangan/kezia"
+title: "Birthday"
+slug: "posts/ultah-1"
 type: "Birthday"
 ultah: 6
 desc: "Tema Ulang Tahun"

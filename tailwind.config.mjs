@@ -14,6 +14,7 @@ module.exports = {
       pacifico: ["Pacifico", "cursive"],
       dyna: ["Dynalight", "cursive"],
       alex: ["Alex Brush", "cursive"],
+      kaushan: ["Kaushan Script", "cursive"],
     },
     extend: {
       animation: {

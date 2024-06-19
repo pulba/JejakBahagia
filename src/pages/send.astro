@@ -32,26 +32,26 @@ import { Icon } from 'astro-iconify';
 </section>
 
 <script>
-
   const urlParams = new URLSearchParams(window.location.search);
-    const femaleValue = urlParams.get('female');
-    const maleValue = urlParams.get('male');
-    const urlValue = urlParams.get('url');
-    
-    document.getElementById('female').value = femaleValue;
-    document.getElementById('male').value = maleValue;
+  const femaleValue = urlParams.get('female');
+  const maleValue = urlParams.get('male');
+  const urlValue = urlParams.get('url');
 
-    urlParams.append('url', 'jejakbahagia.com');
-    const newUrl = `${window.location.origin}${window.location.pathname}?${urlParams.toString()}`;
-    console.log(newUrl);
-    
-    function capitalizeAllWords(sentence) {
+  document.getElementById('female').value = femaleValue;
+  document.getElementById('male').value = maleValue;
+
+  urlParams.append('url', 'jejakbahagia.com');
+  const newUrl = `${window.location.origin}${window.location.pathname}?${urlParams.toString()}`;
+  console.log(newUrl);
+
+  function capitalizeAllWords(sentence) {
     let words = sentence.toLowerCase().split(' ');
     for (let i = 0; i < words.length; i++) {
-        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+      words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
     }
     return words.join(' ');
-    }
+  }
+
   function updateMessage() {
     var femaleName = capitalizeAllWords(document.getElementById("female").value.trim());
     var maleName = capitalizeAllWords(document.getElementById("male").value.trim());
@@ -76,7 +76,7 @@ dengan
 
 Untuk informasi detail mengenai acara, silahkan kunjungi link dibawah ini:
 
-${detailURL}/?to=${Penerima}
+${detailURL}/?to=${encodeURIComponent(Penerima)}
 
 Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu. Atas kehadiran dan doa restunya kami ucapkan terima kasih.
 
@@ -94,7 +94,7 @@ _Harap menunjukan undangan ini kepada penerima tamu_
 
 `;
 
-document.getElementById('message').innerHTML = message;
+    document.getElementById('message').innerHTML = message;
   }
 
   document.getElementById("formSend").addEventListener("submit", function(e) {
@@ -112,8 +112,8 @@ document.getElementById('message').innerHTML = message;
   document.getElementById("Penerima").addEventListener("input", updateMessage);
 
   window.onload = updateMessage;
-
 </script>
+
 
 
 </Noheader>

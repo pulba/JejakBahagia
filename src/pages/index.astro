@@ -185,10 +185,10 @@ import Splide from '../layouts/autoscroll.astro'
       
     
         <div x-show="activeTab === 'tab1'" class="tabcontent">
-          <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
             {posts
               .filter((post) => post.frontmatter.basic)
-              .slice(0, 15)
+              .slice(0, 9)
               .map((post) => (
                 <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
                   <div class="relative">
@@ -199,18 +199,18 @@ import Splide from '../layouts/autoscroll.astro'
                         </a>
                       </div>
                     </div>
-                    <p class="font-bold text-xl pt-4 text-gray-800 sm:text-left capitalize">{post.frontmatter.type}</p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                      <p class="p-1 bg-pink-600 text-white font-bold max-sm:mx-auto w-fit">50%</p>
-                      <p class="font-bold text-pink-600 line-through">{post.frontmatter.unprice}</p>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
+                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
                     </div>
-                    <p class="font-bold text-gray-800 sm:text-left text-lg">{post.frontmatter.price}</p>
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link} Preview <Icon name="mdi:eye" class="w-4 h-4" />
+                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
+                    <div class="mt-4 *:w-full space-y-3">
+                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
+                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
                       </a>
-                      <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                        Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" />
+                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
+                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
                       </a>
                     </div>
                   </div>
@@ -223,7 +223,7 @@ import Splide from '../layouts/autoscroll.astro'
           <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
             {posts
               .filter((post) => post.frontmatter.silver)
-              .slice(0, 15)
+              .slice(0, 9)
               .map((post) => (
                 <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
                   <div class="relative">
@@ -234,18 +234,18 @@ import Splide from '../layouts/autoscroll.astro'
                         </a>
                       </div>
                     </div>
-                    <p class="font-bold text-xl pt-4 text-gray-800 sm:text-left capitalize">{post.frontmatter.type}</p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                      <p class="p-1 bg-pink-600 text-white font-bold max-sm:mx-auto w-fit">50%</p>
-                      <p class="font-bold text-pink-600 line-through">{post.frontmatter.unprice}</p>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
+                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
                     </div>
-                    <p class="font-bold text-gray-800 sm:text-left text-lg">{post.frontmatter.price}</p>
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link} Preview <Icon name="mdi:eye" class="w-4 h-4" />
+                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
+                    <div class="mt-4 *:w-full space-y-3">
+                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
+                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
                       </a>
-                      <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                        Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" />
+                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
+                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
                       </a>
                     </div>
                   </div>
@@ -258,7 +258,7 @@ import Splide from '../layouts/autoscroll.astro'
           <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
             {posts
               .filter((post) => post.frontmatter.diamond)
-              .slice(0, 15)
+              .slice(0, 9)
               .map((post) => (
                 <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
                   <div class="relative">
@@ -269,18 +269,18 @@ import Splide from '../layouts/autoscroll.astro'
                         </a>
                       </div>
                     </div>
-                    <p class="font-bold text-xl pt-4 text-gray-800 sm:text-left capitalize">{post.frontmatter.type}</p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                      <p class="p-1 bg-pink-600 text-white font-bold max-sm:mx-auto w-fit">50%</p>
-                      <p class="font-bold text-pink-600 line-through">{post.frontmatter.unprice}</p>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
+                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
                     </div>
-                    <p class="font-bold text-gray-800 sm:text-left text-lg">{post.frontmatter.price}</p>
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link} Preview <Icon name="mdi:eye" class="w-4 h-4" />
+                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
+                    <div class="mt-4 *:w-full space-y-3">
+                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
+                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
                       </a>
-                      <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                        Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" />
+                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
+                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
                       </a>
                     </div>
                   </div>
@@ -292,7 +292,7 @@ import Splide from '../layouts/autoscroll.astro'
           <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
             {posts
               .filter((post) => post.frontmatter.exclusive)
-              .slice(0, 15)
+              .slice(0, 9)
               .map((post) => (
                 <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
                   <div class="relative">
@@ -303,18 +303,18 @@ import Splide from '../layouts/autoscroll.astro'
                         </a>
                       </div>
                     </div>
-                    <p class="font-bold text-xl pt-4 text-gray-800 sm:text-left capitalize">{post.frontmatter.type}</p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                      <p class="p-1 bg-pink-600 text-white font-bold max-sm:mx-auto w-fit">50%</p>
-                      <p class="font-bold text-pink-600 line-through">{post.frontmatter.unprice}</p>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
+                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
                     </div>
-                    <p class="font-bold text-gray-800 sm:text-left text-lg">{post.frontmatter.price}</p>
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link} Preview <Icon name="mdi:eye" class="w-4 h-4" />
+                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
+                    <div class="mt-4 *:w-full space-y-3">
+                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
+                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
                       </a>
-                      <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                        Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" />
+                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
+                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
                       </a>
                     </div>
                   </div>
@@ -326,7 +326,7 @@ import Splide from '../layouts/autoscroll.astro'
           <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
             {posts
               .filter((post) => post.frontmatter.nofoto)
-              .slice(0, 15)
+              .slice(0, 9)
               .map((post) => (
                 <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
                   <div class="relative">
@@ -337,18 +337,18 @@ import Splide from '../layouts/autoscroll.astro'
                         </a>
                       </div>
                     </div>
-                    <p class="font-bold text-xl pt-4 text-gray-800 sm:text-left capitalize">{post.frontmatter.type}</p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                      <p class="p-1 bg-pink-600 text-white font-bold max-sm:mx-auto w-fit">50%</p>
-                      <p class="font-bold text-pink-600 line-through">{post.frontmatter.unprice}</p>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
+                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
                     </div>
-                    <p class="font-bold text-gray-800 sm:text-left text-lg">{post.frontmatter.price}</p>
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link} Preview <Icon name="mdi:eye" class="w-4 h-4" />
+                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
+                    <div class="mt-4 *:w-full space-y-3">
+                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
+                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
                       </a>
-                      <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                        Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" />
+                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
+                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
                       </a>
                     </div>
                   </div>
@@ -360,7 +360,7 @@ import Splide from '../layouts/autoscroll.astro'
           <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
             {posts
               .filter((post) => post.frontmatter.ultah)
-              .slice(0, 15)
+              .slice(0, 9)
               .map((post) => (
                 <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
                   <div class="relative">
@@ -371,18 +371,18 @@ import Splide from '../layouts/autoscroll.astro'
                         </a>
                       </div>
                     </div>
-                    <p class="font-bold text-xl pt-4 text-gray-800 sm:text-left capitalize">{post.frontmatter.type}</p>
-                    <div class="flex flex-col sm:flex-row gap-2">
-                      <p class="p-1 bg-pink-600 text-white font-bold max-sm:mx-auto w-fit">50%</p>
-                      <p class="font-bold text-pink-600 line-through">{post.frontmatter.unprice}</p>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
+                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
                     </div>
-                    <p class="font-bold text-gray-800 sm:text-left text-lg">{post.frontmatter.price}</p>
-                    <div class="flex flex-col sm:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link} Preview <Icon name="mdi:eye" class="w-4 h-4" />
+                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
+                    <div class="mt-4 *:w-full space-y-3">
+                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
+                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
                       </a>
-                      <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                        Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" />
+                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
+                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
                       </a>
                     </div>
                   </div>
@@ -403,7 +403,7 @@ import Splide from '../layouts/autoscroll.astro'
         </p>
       </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center w-full mx-auto mt-16 gap-x-2 gap-y-8 *:rounded-md *:font-poppins">
-            <div class="overflow-hidden bg-white p-6 max-w-xs relative flex flex-col justify-between border border-gray-400">
+            <div class="overflow-hidden bg-white p-6 relative flex flex-col justify-between border border-gray-400">
               <div>
                   <p class="text-2xl font-semibold text-gray-800">Basic</p>
                   <p class="mt-2 text-pink-600 line-through">Rp. 100.000</p>

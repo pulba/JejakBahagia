@@ -1,15 +1,18 @@
 ---
 layout: "../demobd/ultah-2.astro"
-title: "Kezia Anabel"
-slug: "undangan/kezia"
-type: "Tanpa Foto"
+title: "Birthday"
+slug: "posts/ultah-2"
+type: "Birthday"
+ultah: 6
 desc: "Tema Ulang Tahun"
+price: 'Rp 75.000'
+unprice: 'Rp 150.000'
 img:
   url: "/assets/demo-ultah.webp"
 
 # Colors
 bgfs: "bg-blue-100"
-bgsc: "bg-red-200"
+bgsc: "bg-pink-300"
 bgth: "bg-blue-900"
 
 txfs: "text-white"
@@ -26,13 +29,13 @@ imgsc: "/assets/img-25.webp"
 bg: "/assets/dekor-24.webp"
 
 # Dekor
-dekorfs: "/assets/dekor19.webp"
+dekorfs: "/assets/dekor44.webp"
 dekorsc: "/assets/dekor46.webp"
 dekorth: "/assets/dekor47.webp"
 
 # Data 
 name: "Kezia"
-fullname: "Kezia A. Irawan"
+fullname: "Kezia Anabel Irawan"
 date: "Saturday, August 31 2024"
 birth: "25 Agustus 2007"
 music: "kezia"
