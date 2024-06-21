@@ -26,9 +26,9 @@ imgsc: "/assets/img-25.webp"
 bg: "/assets/dekor-24.webp"
 
 # Dekor
-dekorfs: "/assets/dekor19.webp"
+dekorfs: "/assets/dekor49.webp"
 dekorsc: "/assets/dekor46.webp"
-dekorth: "/assets/dekor47.webp"
+dekorth: "/assets/dekor50.webp"
 
 # Data 
 name: "Kezia"
@@ -55,7 +55,7 @@ numberbankfml: "081281938558"
 
 # Waktu & Tempat Acara
 time: "17:00 - Selesai WIB"
-address: "Hotel Luminor Pecenongan"
+address: "Hotel Luminor Pecenongan Rock and Sugar coffe & Bistro"
 mapsfs: "https://maps.app.goo.gl/fi6GRArAS7ppuHkR8"
 linkmaps: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.989655995547!2d106.8260866!3d-6.1645715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5da5ecda557%3A0x231ad86e140e0b89!2sHotel%20Luminor%20Pecenongan!5e0!3m2!1sid!2sid!4v1718076708034!5m2!1sid!2sid"
 

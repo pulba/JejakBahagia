@@ -1,1 +1,0 @@
-ALTER TABLE rsvp ADD `url` text NOT NULL;
