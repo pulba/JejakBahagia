@@ -7,7 +7,7 @@ basic: 1
 desc: 'Tema Basic 01'
 number: 1
 img:
-  url: '/assets/demo-3.webp'
+  url: '/assets/desti1.webp'
   alt: jejak bahagia
 
 #colors
@@ -26,7 +26,7 @@ before: 'before:bg-black'
 # Img header
 cover: '/assets/desti1.webp'
 imgsc: '/assets/desti2.webp'
-bg: '/assets/6.jpg'
+bg: '/assets/desti1.webp'
 
 #dekor
 dekorfs: '/assets/dekor30.webp'
@@ -40,13 +40,13 @@ pm2: '/assets/desti6.webp'
 
 # Img Our moment
 imgstory1: '/assets/desti1.webp'
-imgstory2: '/assets/desti2.webp'
-imgstory3: '/assets/desti3.webp'
+imgstory2: '/assets/desti9.webp'
+imgstory3: '/assets/desti8.webp'
 imgstory4: '/assets/desti4.webp'
 imgstory5: '/assets/desti5.webp'
-imgstory6: '/assets/desti2.webp'
+imgstory6: '/assets/desti6.webp'
 add1: '/assets/desti3.webp'
-add2: '/assets/desti4.webp'
+add2: '/assets/desti1.webp'
 
 #img story love
 imgstory9: '/assets/img-16.webp'

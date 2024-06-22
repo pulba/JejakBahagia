@@ -27,8 +27,8 @@ from: 'from-sky-800'
 before: 'before:bg-sky-800'
 
 # Img header
-cover: '/assets/aisyah1.webp'
-imgsc: '/assets/aisyah2.webp'
+cover: '/assets/aisyah2.webp'
+imgsc: '/assets/aisyah3.webp'
 bg: '/assets/1.jpeg'
 
 #dekor
@@ -40,16 +40,16 @@ dekorfv: '/assets/dekor26.webp'
 
 # Img kedua mempelai
 pm1: '/assets/aisyah7.webp'
-pm2: '/assets/aisyah6.webp'
+pm2: '/assets/aisyah8.webp'
 
 # Img Our moment
-imgstory1: '/assets/aisyah1.webp'
-imgstory2: '/assets/aisyah2.webp'
+imgstory1: '/assets/aisyah6.webp'
+imgstory2: '/assets/aisyah5.webp'
 imgstory3: '/assets/aisyah3.webp'
-imgstory4: '/assets/aisyah2.webp'
+imgstory4: '/assets/aisyah4.webp'
 imgstory5: '/assets/aisyah5.webp'
 imgstory6: '/assets/aisyah4.webp'
-add1: '/assets/aisyah4.webp'
+add1: '/assets/aisyah1.webp'
 add2: '/assets/img-4.webp'
 
 #img story love
@@ -77,12 +77,10 @@ citymale: "Sulawesi Selatan"
 cityfemale: "Sulawesi Selatan"
 
 # name bank
-logoml: /assets/bri.png
-bankml: "BRI"
+logoml: /assets/nobank.png
 namebankml: "Tidak Ada Rekening"
 numberbankml: "123456789"
-logofml: /assets/bri.png
-bankfml: "BCA"
+logofml: /assets/nobank.png
 namebankfml: "Tidak Ada Rekening"
 numberbankfml: "123456789"
 # waktu & tempat acara

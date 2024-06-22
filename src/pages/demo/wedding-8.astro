@@ -58,6 +58,7 @@ if(!frontmatter) {
   data["imgstory8"] = '/assets/img-12.webp'
   data["add1"] = '/assets/img-29.webp'
   data["add2"] = '/assets/img-31.webp'
+  data["hdd"] = 'display: none;'
 
   //img story love
   data["imgstory9"] = '/assets/img-16.webp'
@@ -134,7 +135,7 @@ if(!frontmatter) {
         <img src=`${frontmatter.dekorfs}` class="rotate-180 right-0 top-0" alt="JejakBahagia" />
       </div>
     </div>
-    <div class=`container h-screen pb-20 mx-auto flex flex-col justify-between items-center relative z-50 ${frontmatter.txfs}`>
+    <div class=`container h-screen py-20 mx-auto flex flex-col justify-between items-center relative z-50 ${frontmatter.txfs}`>
       <h4 class="animate-fadedown text-sm md:text-xl mt-8 tracking-widest font-poppins font-semibold">
           WEDDING INVITATION
       </h4>
@@ -201,7 +202,7 @@ if(!frontmatter) {
               <h1 class="fade-down opacity-0 text-center font-nautigal text-6xl lg:text-8xl">
                 Quote
               </h1>
-              <p class="font-poppins fade-right opacity-0">{frontmatter.quote}</p>
+              <p class="italic font-poppins fade-right opacity-0">{frontmatter.quote}</p>
             </div>
             <img src=`${frontmatter.dekorsc}` alt="JejakBahagia" class="fade-right opacity-0 py-12 mx-auto">
             <div class="">
@@ -517,7 +518,7 @@ if(!frontmatter) {
     <Footerpost />
     <Audio />
     <audio id="myAudio" loop class="hidden">
-      <source src=`/assets/${frontmatter.music}.mp3` type="audio/mpeg">
+      <source src=`/assets/${frontmatter.music}.opus` type="audio/mpeg">
     </audio>
     <Animation /> 
     <Payment />

@@ -55,6 +55,7 @@ if(!frontmatter) {
   data["imgstory8"] = '/assets/img-12.webp'
   data["add1"] = '/assets/img-30.webp'
   data["add2"] = '/assets/img-4.webp'
+  data["hidden"] = 'hidden'
 
   //img story love
   data["imgstory9"] = '/assets/img-16.webp'
@@ -126,7 +127,7 @@ if(!frontmatter) {
       <img src=`${frontmatter.dekorfs}` class="rotate-180" alt="JejakBahagia" />
     </div>
   </div>
-  <div class="container h-screen pb-20 mx-auto flex flex-col justify-between items-center relative z-50">
+  <div class="container h-screen py-20 mx-auto flex flex-col justify-between items-center relative z-50">
     <h1 class=`animate-fadedown text-sm md:text-xl mt-8 tracking-widest font-poppins font-semibold ${frontmatter.txfs}`>
         WEDDING INVITATION
     </h1>
@@ -144,7 +145,7 @@ if(!frontmatter) {
   </div>
 </section>
 <main id="myDIV" class=`hidden peer-checked:block scroll-smooth ${frontmatter.bgfs}`>
-    <section class=`animasi2 relative bg-cover bg-center overflow-hidden before:content-[''] before:bg-gradient-to-t before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from}` style={`background-image:url(${frontmatter.imgsc})`}>
+    <section class=`animasi2 relative bg-cover bg-center overflow-hidden before:content-[''] before:bg-gradient-to-t before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from} ${frontmatter.hidden}` style={`background-image:url(${frontmatter.imgsc})`}>
       <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div class="animate-faderight ">
           <img src=`${frontmatter.dekorfs}` class="" alt="JejakBahagia" />
@@ -165,7 +166,7 @@ if(!frontmatter) {
           class="animate-faderight font-nautigal w-full text-6xl min-[350px]:text-6xl md:text-7xl lg:text-9xl relative">{frontmatter.female } & {frontmatter.male }
         </h2>
         <p class="animate-fadeup sm:text-xl font-poppins font-bold">{frontmatter.date}</p>    
-        <p class="animate-fadeup max-w-prose font-xs">{frontmatter.quote}</p>    
+        <p class="animate-fadeup max-w-prose italic font-xs">{frontmatter.quote}</p>    
         </div>
       </div>
     </section>
@@ -186,7 +187,7 @@ if(!frontmatter) {
               Our Happy Day
             </h1>
           </div>
-          <div  data-count={frontmatter.countdown} id="timer" class=`fade-up opacity-0  grid grid-cols-2 md:grid-cols-4 gap-y-8 justify-center text-center items-center mt-20 sm:px-20 max-w-3xl mx-auto *:text-center *:text-4xl *:sm:text-6xl *:font-medium *:p-1 ${frontmatter.txsc}`>
+          <div  data-count={frontmatter.countdown} id="timer" class=`fade-up opacity-0  grid grid-cols-2 md:grid-cols-4 gap-y-8 justify-center text-center items-center mt-20 sm:px-20 max-w-3xl mx-auto *:text-center *:text-4xl *:sm:text-6xl *:font-bold *:p-1 ${frontmatter.txsc}`>
           </div>
           <Countdown>
         </div>
@@ -429,7 +430,7 @@ if(!frontmatter) {
         </div>
       </div>
     </section>
-    <section class="animasi9 relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden">
+    <section class=`animasi9 relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden before:content-[''] before:bg-gradient-to-b before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from}` style={`background-image:url(${frontmatter.add2})`}>
       <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div class="fade-down opacity-0 ">
           <img src=`${frontmatter.dekorfs}` class="" alt="JejakBahagia" />
@@ -444,7 +445,6 @@ if(!frontmatter) {
           <img src=`${frontmatter.dekorfs}` class="rotate-180" alt="JejakBahagia" />
         </div>
       </div>
-      <div class=`absolute inset-0 bg-cover bg-center blur-[1px] before:content-[''] before:bg-gradient-to-b before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from}` style={`background-image:url(${frontmatter.add2})`}></div>
       <div class="container py-20 px-6 text-center mx-auto relative z-50">
         <div class=`text-center my-10 ${frontmatter.txth}`>
           <h2 class=`fade-right opacity-0 text-5xl lg:text-8xl font-nautigal ${frontmatter.txsc}`>Wedding Gift</h2>
