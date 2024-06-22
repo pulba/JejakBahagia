@@ -144,7 +144,7 @@ if(!frontmatter) {
         <span> {frontmatter.male } </span> 
       </div>
       <div class="text-center">
-          <h3 class="animate-faderight mt-2 font-poppins">Dear Mr./Mrs./Ms.</h3>
+          <p class="animate-faderight mt-2">Kpd Bpk/Ibu/Saudara/i</p>
           <h4 id="invite-name" class="animate-fadeleft font-bold text-xl my-3 capitalize">
             <Namatamu /> nama tamu
           </h4>
@@ -181,7 +181,7 @@ if(!frontmatter) {
               <span> {frontmatter.male } </span> 
             </div>
           </div>
-          <div  data-count={frontmatter.countdown} id="timer" class=`fade-up opacity-0  grid grid-cols-2 md:grid-cols-4 gap-8 justify-center text-center items-center mt-20 sm:px-20 max-w-screen-lg mx-auto *:text-center *:text-4xl *:sm:text-6xl *:font-bold *:p-1 ${frontmatter.txsc}`>
+          <div  data-count={frontmatter.countdown} id="timer" class=`animate-fadeup grid grid-cols-2 md:grid-cols-4 gap-8 justify-center text-center items-center mt-20 sm:px-20 max-w-screen-lg mx-auto *:text-center *:text-4xl *:sm:text-6xl *:font-bold *:p-1 ${frontmatter.txsc}`>
           </div>
         </div>
     </section>
@@ -213,7 +213,8 @@ if(!frontmatter) {
           </div>
         </div>
     </section>
-    <section class="animasi4 overflow-hidden relative">
+    <section class=`animasi5 relative bg-cover bg-no-repeat bg-center bg-fixed overflow-hidden before:content-[''] before:bg-gradient-to-b before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from}`
+    style={`background-image:url(${frontmatter.add1})`}>
       <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div class="left-0 bottom-0 -rotate-90">
           <img src=`${frontmatter.dekorfs}` alt="JejakBahagia" />
@@ -288,19 +289,33 @@ if(!frontmatter) {
           </h1>
         </div>
         <div
-          class=`grid gird-cols-1 md:grid-cols-2 max-w-screen-md w-full mx-auto justify-center items-center gap-4 mt-5 *:mx-auto *:rounded-2xl *:h-full *:p-12 *:w-full ${frontmatter.txth}`>
+          class=`grid gird-cols-1 md:grid-cols-2 max-w-screen-md w-full mx-auto justify-center items-center gap-4 mt-5 *:mx-auto *:rounded-2xl *:w-full *:h-full *:p-6 *:sm:p-12 ${frontmatter.txth}`>
           <div class=`fade-right opacity-0 ${frontmatter.bgfs}`>
             <div class="font-josefin space-y-4">
               <h2 class="text-center font-nautigal text-5xl">Akad Nikah</h2>
-              <p class="text-lg font-bold flex gap-2"><Icon name="mdi:date-range" class="w-6 h-6" /> {frontmatter.date}</p>
-                <p class="text-md flex gap-2"><Icon name="mdi:clock-time-eight-outline" class="w-6 h-6" />{frontmatter.timefs}</p>
-                <p class="flex gap-2"><Icon name="mdi:home" class="w-6 h-6" />{frontmatter.addressfs}</p>
-                <p class="flex gap-2"><Icon name="mdi:google-maps" class="w-8 h-8" />{frontmatter.locationfs}</p>
+              <div class="flex flex-col *:flex *:gap-2">
+                <div>
+                  <Icon name="mdi:date-range" class="w-1/6 h-8" />
+                  <p class="text-lg font-bold"> {frontmatter.date}</p>
+                </div>
+                <div>
+                  <Icon name="mdi:clock-time-eight-outline" class="w-1/6 h-8" />
+                  <p class="text-md">{frontmatter.timefs}</p>
+                </div>
+                <div>
+                  <Icon name="mdi:home" class="w-1/6 h-8" />{frontmatter.addressfs}
+                  <p class="flex gap-2"></p>
+                </div>
+                <div>
+                  <Icon name="mdi:google-maps" class="w-1/6 h-8" />
+                  <p class="w-5/6">{frontmatter.locationfs}</p>
+                </div>
+              </div>
               <div class="group">
                 <a href={frontmatter.mapsfs}>
                   <button
                 class=`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txsc} ${frontmatter.bgth}`
-                >Google Maps <Icon name="mdi:google-maps" class="w-6 h-6" /></button
+                >Google Maps <Icon name="mdi:google-maps" class="w-1/6 h-8" /></button
               >
                 </a>
               </div>
@@ -309,15 +324,30 @@ if(!frontmatter) {
           <div class=`fade-left opacity-0 ${frontmatter.bgfs} ${frontmatter.txth}`>
             <div class="font-josefin space-y-4">
               <h2 class="text-center font-nautigal text-5xl">Resepsi</h2>
-              <p class="text-lg font-bold flex gap-2"><Icon name="mdi:date-range" class="w-6 h-6" /> {frontmatter.date}</p>
-                <p class="text-md flex gap-2"><Icon name="mdi:clock-time-eight-outline" class="w-6 h-6" />{frontmatter.timesc}</p>
-                <p class="flex gap-2"><Icon name="mdi:home" class="w-6 h-6" />{frontmatter.addresssc}</p>
-                <p class="flex gap-2"><Icon name="mdi:google-maps" class="w-8 h-8" />{frontmatter.locationsc}</p>
+              
+              <div class="flex flex-col *:flex *:gap-2">
+                <div>
+                  <Icon name="mdi:date-range" class="w-1/6 h-8" />
+                  <p class="text-lg font-bold"> {frontmatter.date}</p>
+                </div>
+                <div>
+                  <Icon name="mdi:clock-time-eight-outline" class="w-1/6 h-8" />
+                  <p class="text-md">{frontmatter.timesc}</p>
+                </div>
+                <div>
+                  <Icon name="mdi:home" class="w-1/6 h-8" />{frontmatter.addresssc}
+                  <p class="flex gap-2"></p>
+                </div>
+                <div>
+                  <Icon name="mdi:google-maps" class="w-1/6 h-8" />
+                  <p class="w-5/6">{frontmatter.locationsc}</p>
+                </div>
+              </div>
               <div class="group">
                 <a href={frontmatter.mapssc}>
                   <button
                 class=`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txsc} ${frontmatter.bgth}`
-                >Google Maps <Icon name="mdi:google-maps" class="w-6 h-6" /></button
+                >Google Maps <Icon name="mdi:google-maps" class="w-1/6 h-8" /></button
               >
                 </a>
               </div>
