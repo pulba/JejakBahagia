@@ -85,7 +85,7 @@ namebankfml: "Tidak Ada Rekening"
 numberbankfml: "123456789"
 # waktu & tempat acara
 timefs: 11:00 WITA - Selesai
-timesc: 10:00 WITA - Selesai
+timesc: 11:00 WITA - Selesai
 timeth: 13:00 WITA - Selesai
 addressfs: Rumah Mempelai Wanita
 addresssc: Rumah Mempelai Wanita
