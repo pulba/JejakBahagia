@@ -5,7 +5,6 @@ title: 'Aisyah-Yaing'
 type: 'Basic - 02'
 basic: 1
 desc: 'Tema Basic 02'
-countdown: "June 29, 2024 11:00:00"
 price: 'Rp 49.000'
 unprice: 'Rp 100.000'
 number: 1
@@ -87,11 +86,12 @@ numberbankfml: "123456789"
 timefs: 11:00 WITA - Selesai
 timesc: 11:00 WITA - Selesai
 timeth: 13:00 WITA - Selesai
+countdown: "June 29, 2024 11:00:00"
 addressfs: Rumah Mempelai Wanita
 addresssc: Rumah Mempelai Wanita
 addressth: Rumah Mempelai Wanita
-locationfs: Jl. Poros Belawa Lancirang, Lancirang, Kec. Pitu Riawa, Kab. Sidenreng Rappang, Sulsel
-locationsc: Jl. Poros Belawa Lancirang, Lancirang, Kec. Pitu Riawa, Kab. Sidenreng Rappang, Sulsel
+locationfs: Jln. Poros Belawa-Lancirang Siduntung
+locationsc: Jln. Poros Belawa-Lancirang Siduntung
 mapsfs: https://maps.app.goo.gl/gcgFdB2gvzYM77W86?g_st=ac 
 mapssc: https://maps.app.goo.gl/gcgFdB2gvzYM77W86?g_st=ac
 mapsth: https://maps.app.goo.gl/gcgFdB2gvzYM77W86?g_st=ac

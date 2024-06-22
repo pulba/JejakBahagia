@@ -86,7 +86,7 @@ timeth: 09:00 WIB S/d Selesai
 date: Senin, 1 Juli 2024
 datesc: Senin, 1 Juli 2024
 dateth: Minggu, 30 Juni 2024
-countdown: "Jul 1, 2024 00:00:00"
+countdown: "Jul 1, 2024 09:00:00"
 addressfs: Kediaman Mempelai Wanita
 addresssc: Kediaman Mempelai Wanita
 addressth: Kediaman Mempelai Pria
