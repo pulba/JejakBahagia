@@ -25,7 +25,7 @@ const posts = await Astro.glob('../pages/posts/*.md');
           .sort((a, b) => a.frontmatter.number - b.frontmatter.number)
           .slice(0, 15)
           .map((post) => (
-            <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2" key={post.frontmatter.number}>
+            <div key={post.frontmatter.number} class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
               <div class="relative">
                 <div class="overflow-hidden rounded-lg">
                   <div class="w-full object-cover">

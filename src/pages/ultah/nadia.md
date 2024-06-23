@@ -1,14 +1,14 @@
 ---
-layout: "../demobd/ultah-2.astro"
+layout: "../demobd/ultah-1.astro"
 title: "Birthday"
-slug: "posts/ultah-2"
+slug: "ultah/nadia"
 type: "Birthday"
 ultah: 6
 desc: "Tema Ulang Tahun"
 price: 'Rp 75.000'
 unprice: 'Rp 150.000'
 img:
-  url: "/assets/demo-ultah.webp"
+  url: "/assets/dekor46.webp"
 
 # Colors
 bgfs: "bg-blue-100"
@@ -34,8 +34,8 @@ dekorsc: "/assets/dekor46.webp"
 dekorth: "/assets/dekor47.webp"
 
 # Data 
-name: "Kezia"
-fullname: "Kezia Anabel Irawan"
+name: "Nadia"
+fullname: "Nadia E. Pratama"
 date: "Saturday, August 31 2024"
 birth: "25 Agustus 2007"
 music: "kezia"

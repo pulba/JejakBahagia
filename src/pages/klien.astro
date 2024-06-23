@@ -33,6 +33,7 @@ const posts = await Astro.glob('../pages/undangan/*.md');
                       </div>
                     </div>
                     <div class="pt-4">
+                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.title}</p> 
                       <div class="flex flex-col min-[320px]:flex-row gap-4 items-center justify-center min-[320px]:justify-start min-[320px]:justify-between mt-2">
                         <a href={post.frontmatter.slug} class="flex flex-row items-center justify-between gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">{post.frontmatter.link}Preview<Icon name="mdi:eye" class="w-4 h-4" /></a>
                         <a href="/pesan" class="flex flex-row items-center justify-between gap-2 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">Pesan <Icon name="mdi:whatsapp" class="w-4 h-4 text-white" /></a>

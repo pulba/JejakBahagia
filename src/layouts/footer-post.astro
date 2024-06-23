@@ -1,20 +1,16 @@
 ---
-import { Icon } from 'astro-iconify';
 import '@fontsource/the-nautigal';
 import '@fontsource/mr-de-haviland';
 import Logo from '../components/logo.astro';
-import Animation from './animation.astro';
 ---
 
 
-<section class={`relative overflow-hidden bg-cover bg-no-repeat bg-center bg-top bg-fixed py-20 before:content-[''] before:bg-black/65 before:inset-0 before:bg-opacity-75 before:bg-cover before:absolute`} style="background-image: url(/assets/img-25.webp)">
+<section class="relative overflow-hidden py-8">
     <div class="container text-center mx-auto relative z-10">
       <div class="flex flex-col items-center justify-center">
-        
-         <p class="animate-fadedown mx-auto font-poppins text-white text-center flex justify-center items-center gap-1">Made with by</p>
-         <Logo file="jejakbahagiawhite"/>
+         <p class="mx-auto font-poppins text-gray-800 text-center flex justify-center items-center gap-1">Made with by</p>
+         <Logo file="JejakBahagia"/>
       </div>
     </div>
     </div>
-    <Animation />
   </section>
