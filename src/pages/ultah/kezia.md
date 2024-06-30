@@ -33,8 +33,9 @@ dekorsc: "/assets/dekor52.webp"
 dekorth: "/assets/dekor51.webp"
 
 # Data 
-name: "Kezia Anabel"
+name: "Kezia"
 fullname: "Kezia A. Irawan"
+endname: "A. Irawan"
 date: "Saturday, August 31 2024"
 birth: "25 Agustus 2007"
 music: "kezia"
