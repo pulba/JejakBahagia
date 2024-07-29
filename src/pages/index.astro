@@ -3,7 +3,6 @@ import Home from '../layouts/home.astro';
 import '@fontsource-variable/josefin-sans';
 import { Icon } from 'astro-iconify';
 const posts = await Astro.glob('../pages/posts/*.md');
-const ultahs = await Astro.glob('../pages/ultah/*.md');
 import Splide from '../layouts/autoscroll.astro'
 ---
 
@@ -13,14 +12,13 @@ import Splide from '../layouts/autoscroll.astro'
       <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
         <div class="w-full py-8">
             <div class="px-6">
-                <h2 class="text-3xl min-[340px]:text-4xl min-[445px]:text-5xl sm:text-6xl md:text-6xl font-black font-poppins text-gray-800">Website Undangan Pernikahan Online<br/>
-                  <span class="text-pink-600 italic font-thin">Murah & Cepat</span></h2>
+                <h2 class="text-3xl min-[500px]:text-5xl sm:text-6xl font-black font-poppins text-gray-600">Website Undangan Pernikahan Digital<br/>
+                  <span class="text-blue-700 italic font-bold">Cuma 75K</span></h2>
 
                 <p class="mt-4 text-gray-600 font-poppins max-w-lg">Membuat Setiap Jejak Menuju Kebahagiaan dengan Harga yang Ramah di Kantong!</p>
 
-                <div class="flex flex-row max-[400px]:flex-col gap-x-2 gap-y-4 w-fit mt-6 *:rounded-full *:py-2 *:px-4 *:font-poppins *:text-md">
-                    <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!" class="flex flex-row items-center justify-center gap-1 tracking-wider text-center text-white transition-colors duration-300 bg-pink-600 hover:bg-pink-600">Konsultasi<Icon name="mdi:whatsapp" class="w-5 h-5 text-white" /></a>
-                    <a href="/tema" class="flex flex-row items-center justify-center tracking-wider text-center text-gray-900 transition-colors duration-300 transform bg-none ring-1 ring-gray-900 lg:hover:bg-gray-900 hover:text-white hover:ring-0">Lihat Tema<Icon name="mdi:arrow-right-thin" class="w-6 h-6" /></a>
+                <div class="flex flex-row max-[400px]:flex-col gap-x-2 gap-y-4 w-fit mt-6 text-white *:rounded-md *:py-3 *:px-6 *:font-poppins ">
+                    <a href="/tema" class="flex flex-row items-center justify-center text-center transition-colors duration-300 transform bg-blue-700 hover:bg-blue-600 hover:text-white hover:ring-0">LIHAT KATALOG<Icon name="mdi:play-arrow" class="w-6 h-6" /></a>
                 </div>
             </div>
         </div>
@@ -41,13 +39,13 @@ import Splide from '../layouts/autoscroll.astro'
     </div>
     </div>
   </section>
-  <section class="bg-pink-600">
+  <section class="bg-blue-700">
     <div class="container py-12 px-6 mx-auto">
       <div class="text-center mx-auto space-y-3 max-w-xl text-white">
         <h2 class="font-bold font-poppins text-4xl md:text-5xl">Mengapa Harus Jejak Bahagia?</h2>
         <p class="max-w-prose text-center font-poppins mx-auto text-md leading-7 mt-2">Sejak tahun 2022 JejakBahagia telah menjadi bagian dari momen spesial customer. </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4 mx-auto justify-center items-center text-center -mb-28 relative max-w-screen-lg mt-20 *:p-8 *:bg-white *:text-pink-600 *:shadow-xl *:border *:font-poppins *:rounded-b-lg ">
+      <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4 mx-auto justify-center items-center text-center -mb-28 relative max-w-screen-lg mt-20 *:p-8 *:bg-white *:text-blue-700 *:shadow-xl *:border *:font-poppins *:rounded-b-lg ">
         <div>
           <h4 class="text-5xl font-bold">+1K</h4>
           <p class="text-xl">Undangan Aktif</p>
@@ -64,528 +62,223 @@ import Splide from '../layouts/autoscroll.astro'
     </div>
   </section>
   <section>
-    <div class="container py-20 px-6 mx-auto">
+    <div id="fitur" class="container py-20 px-6 mx-auto">
       <div class="text-center mx-auto space-y-3 max-w-xl mt-20">
-        <h2 class="font-bold font-poppins text-4xl md:text-5xl text-pink-600">Fitur Terbaik</h2>
+        <h2 class="font-bold font-poppins text-4xl md:text-5xl text-blue-700">Fitur Undangan</h2>
         <p class="text-center font-poppins mx-auto text-md leading-7 mt-2 text-gray-500">Berbagai macam fitur terbaik undangan online yang Anda butuhkan ada disini.
         </p>
       </div>
-      <div class="grid grid-cols-1 min-[450px]:grid-cols-2 lg:grid-cols-3 gap-4 mt-16 w-full max-w-screen-lg mx-auto *:w-full *:mx-auto *:p-8 *:bg-white *:shadow-lg *:rounded-br-2xl *:rounded-tl-2xl *:sm:flex *:gap-x-4 *:gap-y-8 *:relative hover:*:scale-105 hover:*:drop-shadow-xl *:border-pink-600 *:border">
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-16 w-full max-w-screen-lg mx-auto *:w-full *:mx-auto *:p-4 *:bg-white *:shadow-lg *:rounded-br-2xl *:rounded-tl-2xl *:sm:flex *:gap-x-4 *:gap-y-8 *:relative hover:*:scale-105 hover:*:drop-shadow-xl *:border-blue-700 *:border">
         <div class="">
           <div>
-            <Icon name="mdi:web-check" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:web-check" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Domain Ekslusif</h4>
-            <p class="font-poppins text-gray-600 text-sm">Menggunakan mekanisme subdomain dan tersedia paket custom domain</p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Domain Ekslusif</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:people-group" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:people-group" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Custom Nama Tamu</h4>
-            <p class="font-poppins text-gray-600 text-sm">Satu tamu, satu undangan. Selayaknya undangan pernikahan fisik
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Custom Nama Tamu</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:gift-outline" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:gift-outline" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Hadiah</h4>
-            <p class="font-poppins text-gray-600 text-sm">Tersedia fitur kirim hadiah secara online ke rekening kamu atau alamat melalui undanganmu
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Hadiah</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:cash-check" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:cash-check" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Amplop Digital</h4>
-            <p class="font-poppins text-gray-600 text-sm">Pembayaran dapat dilakukan kapan saja, mudah, otomatis dengan metode pembayaran yang lengkap
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Amplop Digital</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:book-edit-outline" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:book-edit-outline" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Reservasi & Buku Tamu</h4>
-            <p class="font-poppins text-gray-600 text-sm">Fitur penerima ucapan dari tamu dan konfirmasi kehadiran dengan manajemen data yang baik
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Reservasi & Buku Tamu</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:timer-sand-complete" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:timer-sand-complete" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Countdown Timer</h4>
-            <p class="font-poppins text-gray-600 text-sm">Tersedia fitur countdown timer yang dapat berfungsi sebagai pengingat waktu acara
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Countdown Timer</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:music-note" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:music-note" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Background Music</h4>
-            <p class="font-poppins text-gray-600 text-sm">Request musik sesuai keinginan kamu agar undanganmu lebih ekslusif dan romantis.
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Background Music</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:folder-image" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:folder-image" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Gallery Foto</h4>
-            <p class="font-poppins text-gray-600 text-sm">Share momen indah kamu dengan pasanganmu dengan slideshow yang keren
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Gallery Foto</h4>
           </div>
         </div>
         <div class="">
           <div>
-            <Icon name="mdi:book-love-outline" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-pink-600 p-2 rounded-full" />
+            <Icon name="mdi:book-love-outline" class="w-10 h-10 mb-2 sm:mb-0 text-white bg-blue-700 p-2 rounded-full" />
           </div>
           <div class="relative">
-            <h4 class="font-bold font-poppins text-xl text-2xl text-pink-600">Love Stories</h4>
-            <p class="font-poppins text-gray-600 text-sm">Ceritakan Kisah Cinta kamu dengan leluasa.
-            </p>
+            <h4 class="font-bold font-poppins text-xl text-2xl text-blue-700">Love Stories</h4>
           </div>
         </div>
     </div>
   </section>
   <section>
-    <div class="container px-6 py-20 mx-auto text-center">
+    <div id="katalog" class="container px-6 py-20 mx-auto text-center">
       <div class="space-y-2 max-w-xl mx-auto">
-        <h1
-          class="font-bold font-poppins text-4xl md:text-5xl text-pink-600"
-        >
-        Pilihan Desain
+        <h1 class="font-bold font-poppins text-4xl md:text-5xl text-blue-700">
+          Pilihan Tema
         </h1>
-        <p class="text-center font-poppins mx-auto text-md leading-7 mt-2 text-gray-500">
-          Dengan adanya preset kamu tinggal pilih design undangan sesuai dengan yang kamu mau!
+        <p
+          class="text-center font-poppins mx-auto text-md leading-7 mt-2 text-gray-500">
+          Dengan adanya preset kamu tinggal pilih design undangan sesuai dengan
+          yang kamu mau!
         </p>
       </div>
-      <div class="mx-auto p-4 w-full" x-data="{ activeTab: 'tab1' }">
-        <div class="tabs grid grid-cols-2 sm:grid-cols-3 gap-4 justify-center max-w-screen-sm mx-auto my-12 font-poppins *:h-fit *:rounded-md *:py-3 *:px-4">
-          <button @click="activeTab = 'tab1'" :class="activeTab === 'tab1' ? 'bg-pink-600 text-white' : 'bg-gray-600 text-white'" class="tablinks">Basic</button>
-          <button @click="activeTab = 'tab2'" :class="activeTab === 'tab2' ? 'bg-pink-600 text-white' : 'bg-gray-600 text-white'" class="tablinks">Silver</button>
-          <button @click="activeTab = 'tab3'" :class="activeTab === 'tab3' ? 'bg-pink-600 text-white' : 'bg-gray-600 text-white'" class="tablinks">Diamond</button>
-          <button @click="activeTab = 'tab4'" :class="activeTab === 'tab4' ? 'bg-pink-600 text-white' : 'bg-gray-600 text-white'" class="tablinks">Exclusive</button>
-          <button @click="activeTab = 'tab5'" :class="activeTab === 'tab5' ? 'bg-pink-600 text-white' : 'bg-gray-600 text-white'" class="tablinks">Tanpa Foto</button>
-          <button @click="activeTab = 'tab6'" :class="activeTab === 'tab6' ? 'bg-pink-600 text-white' : 'bg-gray-600 text-white'" class="tablinks">Birthday</button>
+      <div class="mx-auto mt-5 w-full">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
+          {
+            posts
+              .filter(post => post.frontmatter.number !== undefined) 
+              .sort((a, b) => a.frontmatter.number - b.frontmatter.number) 
+              .slice(0, 6)
+              .map((post) => (
+                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
+                  <div class="relative">
+                    <div class="overflow-hidden rounded-lg">
+                      <div class="w-full object-cover">
+                        <a href={post.frontmatter.slug}>
+                          <img
+                            src={post.frontmatter.img?.url}
+                            alt={post.frontmatter.img?.alt}
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <p class="font-bold text-xl pt-4 text-left text-gray-600 capitalize">
+                      {post.frontmatter.title}
+                    </p>
+                    <div class="flex flex-row items-center gap-2 py-2">
+                      <p class="w-fit p-1 bg-blue-700 text-white font-bold max-sm:mx-auto">
+                        50%
+                      </p>
+                      <p class="w-full font-bold text-blue-700 text-start line-through">
+                        {post.frontmatter.unprice}
+                      </p>
+                    </div>
+                    <p class="font-bold text-gray-600 text-left text-2xl">
+                      {post.frontmatter.price}
+                    </p>
+                    <div class="mt-4 space-y-4 sm:space-y-0 sm:flex flex-row items-center justify-between gap-2 *:w-full *:sm:w-max *:flex *:flex-row *:items-center *:justify-center *:gap-1 *:text-white *:px-4 *:py-2 *:rounded-sm">
+                      <a href="/pesan"
+                        class="bg-blue-700">
+                        <Icon
+                          name="mdi:navigation-variant"
+                          class="w-6 h-6 text-white"
+                        />
+                        Pesan
+                      </a>
+                      <a
+                        href={post.frontmatter.slug}
+                        class="bg-gray-600">
+                        {post.frontmatter.link}{" "}
+                        <Icon name="mdi:eye" class="w-4 h-4" />
+                        Preview
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))
+          }
+        </div>
+        <a href="/katalog" class="flex flex-row items-center justify-center mx-auto w-fit px-6 py-3 mt-8 text-center text-white rounded-sm transition-colors duration-300 transform bg-blue-700 hover:bg-blue-600">TEMA LAINNYA<Icon name="mdi:play-arrow" class="w-6 h-6" /></a>
       </div>
-      
-    
-        <div x-show="activeTab === 'tab1'" class="tabcontent">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
-            {posts
-              .filter((post) => post.frontmatter.basic)
-              .slice(0, 9)
-              .map((post) => (
-                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
-                  <div class="relative">
-                    <div class="overflow-hidden rounded-lg">
-                      <div class="w-full object-cover">
-                        <a href={post.frontmatter.slug}>
-                          <img src={post.frontmatter.img.url} alt={post.frontmatter.desc} />
-                        </a>
-                      </div>
-                    </div>
-                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
-                    <div class="flex flex-row items-center gap-2 py-2">
-                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
-                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
-                    </div>
-                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
-                    <div class="mt-4 *:w-full space-y-3">
-                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
-                      </a>
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-    
-        <div x-show="activeTab === 'tab2'" class="tabcontent">
-          <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
-            {posts
-              .filter((post) => post.frontmatter.silver)
-              .slice(0, 9)
-              .map((post) => (
-                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
-                  <div class="relative">
-                    <div class="overflow-hidden rounded-lg">
-                      <div class="w-full object-cover">
-                        <a href={post.frontmatter.slug}>
-                          <img src={post.frontmatter.img.url} alt={post.frontmatter.desc} />
-                        </a>
-                      </div>
-                    </div>
-                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
-                    <div class="flex flex-row items-center gap-2 py-2">
-                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
-                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
-                    </div>
-                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
-                    <div class="mt-4 *:w-full space-y-3">
-                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
-                      </a>
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-    
-        <div x-show="activeTab === 'tab3'" class="tabcontent">
-          <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
-            {posts
-              .filter((post) => post.frontmatter.diamond)
-              .slice(0, 9)
-              .map((post) => (
-                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
-                  <div class="relative">
-                    <div class="overflow-hidden rounded-lg">
-                      <div class="w-full object-cover">
-                        <a href={post.frontmatter.slug}>
-                          <img src={post.frontmatter.img.url} alt={post.frontmatter.desc} />
-                        </a>
-                      </div>
-                    </div>
-                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
-                    <div class="flex flex-row items-center gap-2 py-2">
-                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
-                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
-                    </div>
-                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
-                    <div class="mt-4 *:w-full space-y-3">
-                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
-                      </a>
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-        <div x-show="activeTab === 'tab4'" class="tabcontent">
-          <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
-            {posts
-              .filter((post) => post.frontmatter.exclusive)
-              .slice(0, 9)
-              .map((post) => (
-                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
-                  <div class="relative">
-                    <div class="overflow-hidden rounded-lg">
-                      <div class="w-full object-cover">
-                        <a href={post.frontmatter.slug}>
-                          <img src={post.frontmatter.img.url} alt={post.frontmatter.desc} />
-                        </a>
-                      </div>
-                    </div>
-                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
-                    <div class="flex flex-row items-center gap-2 py-2">
-                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
-                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
-                    </div>
-                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
-                    <div class="mt-4 *:w-full space-y-3">
-                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
-                      </a>
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-        <div x-show="activeTab === 'tab5'" class="tabcontent">
-          <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
-            {posts
-              .filter((post) => post.frontmatter.nofoto)
-              .slice(0, 9)
-              .map((post) => (
-                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
-                  <div class="relative">
-                    <div class="overflow-hidden rounded-lg">
-                      <div class="w-full object-cover">
-                        <a href={post.frontmatter.slug}>
-                          <img src={post.frontmatter.img.url} alt={post.frontmatter.desc} />
-                        </a>
-                      </div>
-                    </div>
-                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
-                    <div class="flex flex-row items-center gap-2 py-2">
-                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
-                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
-                    </div>
-                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
-                    <div class="mt-4 *:w-full space-y-3">
-                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
-                      </a>
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-        <div x-show="activeTab === 'tab6'" class="tabcontent">
-          <div class="grid grid-cols-1 sm::grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 max-w-screen-lg mx-auto">
-            {ultahs
-              .filter((post) => post.frontmatter.type)
-              .slice(0, 9)
-              .map((post) => (
-                <div class="relative px-6 pt-4 pb-8 bg-white rounded-lg border-2">
-                  <div class="relative">
-                    <div class="overflow-hidden rounded-lg">
-                      <div class="w-full object-cover overflow-hidden">
-                        <a href={post.frontmatter.slug}>
-                          <img src={post.frontmatter.img.url} class="aspect-square h-max" alt={post.frontmatter.desc} />
-                        </a>
-                      </div>
-                    </div>
-                    <p class="font-bold text-xl pt-4 text-left text-gray-800 capitalize">{post.frontmatter.type}</p> 
-                    <div class="flex flex-row items-center gap-2 py-2">
-                      <p class="w-fit p-1 bg-pink-600 text-white font-bold max-sm:mx-auto">50%</p>
-                      <p class="w-full font-bold text-pink-600 text-start line-through">{post.frontmatter.unprice}</p>
-                    </div>
-                    <p class="font-bold text-gray-800 text-left text-2xl">{post.frontmatter.price}</p>
-                    <div class="mt-4 *:w-full space-y-3">
-                      <a href="/pesan" class="flex flex-row items-center justify-center gap-1 text-white bg-pink-600 w-fit px-4 py-2 rounded-md">
-                         <Icon name="mdi:navigation-variant" class="w-6 h-6 text-white" />Pesan
-                      </a>
-                      <a href={post.frontmatter.slug} class="flex flex-row items-center justify-center gap-2 text-white bg-gray-600 w-fit px-4 py-2 rounded-md">
-                        {post.frontmatter.link}  <Icon name="mdi:eye" class="w-4 h-4" />Lihat Preview				
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
-      </div>
-      
     </div>
   </section>
-  
   <section>
     <div class="container py-20 px-6 mx-auto">
-      <div class="text-center text-pink-600 font-poppins mx-auto space-y-3 max-w-xl">
+      <div class="text-center text-blue-700 font-poppins mx-auto space-y-3 max-w-xl">
         <h2 class="font-bold text-3xl sm:text-4xl md:text-5xl">Harga Tema</h2>
-        <p class="text-center mx-auto text-md text-gray-500 leading-7 mt-2">Kami memberikan harga termurah dan fitur terlengkap, silahkan Lihat perbandingan masing-masing paket disini.
+        <p class="text-center mx-auto text-md text-gray-500 leading-7 mt-2">Banyak pilihan tea dengan harga yang tetap sama
         </p>
       </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center w-full mx-auto mt-16 gap-x-2 gap-y-8 *:rounded-md *:font-poppins">
-            <div class="overflow-hidden bg-white p-6 relative flex flex-col justify-between border border-gray-400">
+        <div class="max-w-screen-md mx-auto mt-16 gap-x-2 gap-y-8 *:rounded-md *:font-poppins">
+            <div class="overflow-hidden bg-white p-6 relative flex flex-col  justify-between items-center gap-4 border border-gray-400">
               <div>
-                  <p class="text-2xl font-semibold text-gray-800">Basic</p>
-                  <p class="mt-2 text-pink-600 line-through">Rp. 100.000</p>
-                  <h4 class="text-4xl font-semibold flex text-gray-800"><sup class="text-base">Rp</sup>49.000</h4>
-                  <p class="text-gray-500">Masa Aktif 30 Hari</p>
+                  <p class="mt-2 text-blue-700 line-through">Rp. 150.000</p>
+                  <h4 class="text-4xl font-semibold flex text-gray-600"><sup class="text-base">Rp</sup>75.000</h4>
+                  <p class="text-gray-500">Masa Aktif 1 Tahun</p>
               </div>
-              <hr class="h-px mb-4 bg-gray-500 w-full mx-auto border-0">
-              <div class="space-y-2 *:flex *:gap-2">
+              <div class="space-y-2 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-8 *:flex *:gap-2">
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
                       <span class="text-gray-700">Tamu Tanpa Batas</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Gallery foto (max 4)</span>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Gallery foto (max 8)</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Countdown Timer</span>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Dashboard undangan</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">RSVP</span>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Kirim undangan mudah</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Bebas pilih Tema</span>
+                  </div>
+                  <div>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Custom musik latar</span>
+                  </div>
+                  <div>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Form RSVP & Ucapan
+                      </span>
+                  </div>
+                  <div>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
                       <span class="text-gray-700">Amplop Digital</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Quote</span>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Hitung Mundur Waktu Acara</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Background Music
-                      </span>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Integrasi Google Maps</span>
                   </div>
                   <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Revisi 2 kali</span>
+                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                      <span class="text-gray-700">Revisi 3 Kali</span>
                   </div>
               </div>
 
               <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-                <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-pink-600 rounded-md hover:bg-gray-800">
-                  Buat Undangan
-                </button>
-              </a>
-              
-            </div>
-            <div class="relative px-8 py-12 bg-white flex flex-col justify-between overflow-hidden border border-gray-400">
-              <div class="absolute right-0 top-0 h-16 w-16">
-                <div class="absolute right-[-34px] top-[32px] w-[170px] transform rotate-[44deg] bg-pink-600 text-center text-white  font-bold py-1">Popular</div>
-              </div>
-              <div>
-                  <p class="text-2xl font-semibold text-gray-800">Silver</p>
-                  <p class="mt-2 text-pink-600 line-through">Rp. 150.000</p>
-                  <h4 class="text-4xl font-semibold flex text-gray-800"><sup class="text-base">Rp</sup>75.000</h4>
-                  <p class="text-gray-500">Masa Aktif 3 Bulan</p>
-              </div>
-              <hr class="h-px mb-4 bg-gray-500 w-full mx-auto border-0">
-              <div class="space-y-2 *:flex *:gap-2">
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Semua Fitur Tema Basic</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Custom Nama Tamu</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Profil Mempelai</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Gallery foto (max 6)</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Request Lagu</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Embed Map</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Revisi 3 kali</span>
-                  </div>
-              </div>
-
-              <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-                <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-pink-600 rounded-md hover:bg-gray-800">
-                  Buat Undangan
-                </button>
-              </a>
-              
-            </div>
-            <div class="overflow-hidden bg-pink-600 px-8 py-16 border border-pink-600 relative flex flex-col justify-between">
-              <div class="absolute right-0 top-0 h-16 w-16">
-                <div class="absolute right-[-34px] top-[32px] w-[170px] transform rotate-[44deg] bg-white text-center text-pink-600 font-bold py-1">BEST SELLER</div>
-              </div>
-              <div class="text-white">
-                  <p class="text-2xl font-semibold">Diamond</p>
-                  <p class="mt-2 line-through">Rp. 200.000</p>
-                  <h4 class="text-4xl font-semibold flex"><sup class="text-base">Rp</sup>99.000</h4>
-                  <p>Masa Aktif 1 Tahun</p>
-              </div>
-              <hr class="h-px mb-4 bg-white w-full mx-auto border-0">
-              <div class="space-y-2 *:flex *:gap-2">
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Semua Fitur Tema Silver</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Custom Nama Tamu</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Gallery foto (max 10)</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Fitur Live Streaming</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Video Prewed</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Love Story / Story Line
-                      </span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                      <span class="text-white">Revisi 4 kali</span>
-                  </div>
-              </div>
-
-              <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-                <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-gray-800 text-center capitalize transition-colors duration-300 transform bg-white rounded-md hover:bg-gray-800 hover:text-white">
-                  Buat Undangan
-                </button>
-              </a>
-            </div>
-            <div class="px-8 py-12 bg-white lex flex-col justify-between border border-gray-400">
-              <div>
-                  <p class="text-2xl font-semibold text-gray-800">Exclusive</p>
-                  <p class="mt-2 text-pink-600 line-through">Rp. 300.000</p>
-                  <h4 class="text-4xl font-semibold flex text-gray-800"><sup class="text-base">Rp</sup>149.000</h4>
-                  <p class="text-gray-500">Masa Aktif 1 Tahun</p>
-              </div>
-              <hr class="h-px mb-4 bg-gray-500 w-full mx-auto border-0">
-              <div class="space-y-2 *:flex *:gap-2">
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Semua Fitur Tema Diamond</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Custom Tema</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Request Suku & Adat</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Gallery foto (max 15)</span>
-                  </div>
-                  <div>
-                    <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                      <span class="text-gray-700">Revisi Unlimited</span>
-                  </div>
-              </div>
-
-              <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-                <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-pink-600 rounded-md hover:bg-gray-800">
+                <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-blue-700 rounded-md hover:bg-gray-600">
                   Buat Undangan
                 </button>
               </a>
@@ -594,9 +287,9 @@ import Splide from '../layouts/autoscroll.astro'
         </div>
     </div>
 </section>
-<section class="relative overflow-hidden">
+<section id="testi" class="relative overflow-hidden">
   <div class="container mx-auto py-20 px-6 text-center">
-    <div class="text-pink-600">
+    <div class="text-blue-700">
       <h1 class="font-bold font-poppins text-4xl md:text-5xl">Testimoni</h1>
       <p class="max-w-prose text-center text-gray-500 font-poppins mx-auto">Bukti nyata bahwa JejakBahagia telah menjadi bagian kebahagiaan momen terbaik mereka</p>
     </div>
@@ -625,12 +318,15 @@ import Splide from '../layouts/autoscroll.astro'
 
   </div>
 </section>
-<section class="bg-pink-600 py-12 mx-auto">
+<section id="faq"class="bg-blue-700 py-12 mx-auto">
   <div class="container px-12">
-    <div class="flex flex-col md:flex-row justify-evenly items-center gap-y-8 text-white *:w-full">
-      <h4 class="font-bold text-2xl">Untuk mengetahui informasi selengkapnya, silahkan hubungi kami.</h4>
-      <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-        <p class="flex justify-end gap-2 text-lg">Hubungi Kami <Icon name="mdi:menu-right" class="w-8 h-8 text-white animate-[ping_4s_ease-in-out_infinite]" /></p>
+    <div class="flex flex-col md:flex-row justify-between items-center gap-y-8">
+      <div class="text-white font-bold">
+        <h4 class="font-bold text-4xl">Butuh Konsultasi ?</h4>
+      <p>Jika anda butuh desain custom, silahkan kontak kami!</p>
+      </div>
+      <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!" class="bg-white py-2 px-6 rounded-full text-blue-700">
+        <p class="flex justify-end gap-2 text-lg">Hubungi Kami <Icon name="mdi:menu-right" class="w-8 h-8" /></p>
       </a>
     </div>
   </div>
@@ -638,7 +334,7 @@ import Splide from '../layouts/autoscroll.astro'
 <section>
   <div class="container px-6 py-20 max-w-screen-lg mx-auto">
     <div class="mb-12 font-poppins">
-      <h1 class="font-bold text-4xl md:text-5xl text-pink-600">Frequently Asked Questions</h1>
+      <h1 class="font-bold text-4xl md:text-5xl text-blue-700">Frequently Asked Questions</h1>
       <p class="leading-7 mt-2 text-gray-500">Dibawah ini adalah daftar pertanyaan yang sering ditanyakan
       </p>
     </div>

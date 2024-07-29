@@ -56,14 +56,32 @@ const { color } = Astro.props
 <script define:vars={{ current_url }}>
   const formRsvp = document.querySelector("#formRsvp");
 
+
+  function sanitizeInput(input) {
+    const tempDiv = document.createElement("div");
+    tempDiv.innerText = input;
+    return tempDiv.innerHTML;
+  }
+
   formRsvp.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const usernameInput = document.getElementById("username");
     const messageInput = document.getElementById("message");
 
-    const username = usernameInput.value;
-    const message = messageInput.value;
+
+    if (usernameInput.value.length > 50) {
+      alert("Username terlalu panjang");
+      return;
+    }
+
+    if (messageInput.value.length > 500) {
+      alert("Pesan terlalu panjang");
+      return;
+    }
+
+    const username = sanitizeInput(usernameInput.value);
+    const message = sanitizeInput(messageInput.value);
 
     const radio = Array.from(document.getElementsByClassName("radio"));
     let present;
@@ -73,7 +91,13 @@ const { color } = Astro.props
       }
     });
 
-    fetch(`/api/rsvp-send?name=${username}&content=${message}&present=${present.value}&url=${current_url}`, {
+    // If no radio button is checked, show an alert
+    if (!present) {
+      alert("Pilih salah satu opsi kehadiran");
+      return;
+    }
+
+    fetch(`/api/rsvp-send?name=${encodeURIComponent(username)}&content=${encodeURIComponent(message)}&present=${encodeURIComponent(present.value)}&url=${encodeURIComponent(current_url)}`, {
       method: "GET"
     })
     .then(response => response.json())
@@ -91,5 +115,6 @@ const { color } = Astro.props
     });
   });
 </script>
+
 
 

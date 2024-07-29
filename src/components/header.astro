@@ -1,44 +1,93 @@
 ---
 import '@fontsource/poppins';
-import { Icon } from 'astro-iconify';
 import '@fontsource/mr-de-haviland';
 import '@fontsource/the-nautigal';
 import Logo from './logo.astro';
+import { Icon } from 'astro-iconify';
+
+const links = [
+  { name: "Home", href: "/", current: true },
+  { name: "Katalog", href: "/katalog", current: true },
+  { name: "Harga", href: "/harga", current: true },
+  { name: "Contact", href: "/contact", current: true },
+];
 ---
 
-<nav x-data="{ isOpen: false }" class="relative bg-white shadow bg-gray-50">
-  <div class="container px-6 py-4 mx-auto relative w-full flex justify-between items-center [&>*]:lg:w-1/3 [&>*]:font-poppins">
-      
-    <Logo file="JejakBahagia" />
-      <!-- Mobile menu button -->
-      <div class="flex md:hidden justify-between items-center z-40">
-        <button x-cloak @click="isOpen = !isOpen" type="button" class="text-gray-500 [&>*]:w-6 [&>*]:h-6" aria-label="toggle menu">
-            <Icon name="mdi:equal" x-show="!isOpen"/>
-            <Icon name="mdi:close" x-show="isOpen" />
-        </button>
+<nav class="px-6 py-6 mx-auto shadow">
+  <div class="container mx-auto md:flex items-center justify-between">
+    <div class="flex items-center justify-between">
+      <Logo file="JejakBahagia" />
+      <div class="md:hidden">
+        <svg
+          id="icon1"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="gray-800"
+          class="size-6 stroke-gray-800">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+        </svg>
+        <svg
+          id="icon2"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="gray-800"
+          class="size-6 hidden stroke-gray-800">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"></path>
+        </svg>
       </div>
-      <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-      <div x-cloak :class="[isOpen ? 'translateX-100 opacity-100' : 'translateX-0 opacity-0']" class="absolute h-fit inset-0 z-20 w-full px-6 py-4 mt-20 bg-white md:mt-0 md:p-0 md:top-0 md:relative md:opacity-100 md:translate-x-0 md:flex md:items-center md:justify-evenly">
-          <div class="flex flex-col items-center justify-center text-center gap-4 md:flex-row [&>*]:text-gray-800/75 [&>*]:md:mx-2 [&>*]:w-fit [&>*]:relative [&>*]:transition-all [&>*]:w-min-content
-            [&>*]:before:w-0 [&>*]:before:h-[2px] [&>*]:before:absolute [&>*]:before:-bottom-[3px] [&>*]:before:right-0 [&>*]:before:bg-pink-600 [&>*]:before:transition-all [&>*]:before:duration-700
-            hover:[&>*]:before:w-full hover:[&>*]:before:left-0 hover:[&>*]:before:bg-pink-600 hover:[&>*]:text-pink-600">
-              <a href="/" class="nav">Home</a>
-              <a href="/tema" class="nav">Tema</a>
-              <a href="/harga" class="nav">Harga</a>
-              <a href="/contact" class="nav">Contact</a>
-          </div>
-          <div class="relative mt-4 md:mt-0 flex flex-col items-center ">
-            <a href="/pesan">
-              <button class="px-4 py-2 z-50 relative md:hidden block bg-pink-600 w-max rounded-full text-white font-bold font-poppins flex gap-1 transition-all duration-700 ease-linear hover:bg-white hover:text-pink-600 hover:ring hover:ring-pink-700 hover:ring-1">Buat Undangan</button>
+    </div>
+    <ul
+      id="menu"
+      class="flex flex-col md:flex-row gap-6 mt-8 md:mt-0 hidden md:flex">
+      {
+        links.map((link) => (
+          <li class="border-b pb-2 md:border-none md:pb-0">
+            <a
+              href={link.href}
+              class="text-gray-800 font-poppins hover:text-blue-600 hover:font-bold">
+              {link.name}
             </a>
-            
-          </div>
-      </div>
-      <div class="relative mt-4 md:mt-0 hidden md:flex justify-end">
-        <a href="/pesan">
-          <button class="px-4 py-2 z-50 relative bg-pink-600 w-max rounded-full text-white font-bold font-poppins flex gap-1 transition-all duration-700 ease-linear hover:bg-white hover:text-pink-600 hover:ring hover:ring-pink-600 hover:ring-1">Buat Undangan</button>
-        </a>
-        
+          </li>
+        ))
+      }
+    </ul>
+    <div id="btn" class="relative w-max mt-5 md:mt-0 hidden md:flex justify-end">
+      <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!" class="flex flex-row items-center justify-center gap-1 px-4 py-3 rounded-md tracking-wider text-center text-white transition-colors duration-300 bg-blue-700 hover:bg-blue-700">Konsultasi<Icon name="mdi:whatsapp" class="w-5 h-5 text-white" /></a>
     </div>
   </div>
 </nav>
+<script>
+  document.getElementById("icon1").addEventListener("click", function () {
+    document.getElementById("icon1").classList.add("hidden");
+    document.getElementById("icon2").classList.remove("hidden");
+    document.getElementById("menu").classList.remove("hidden");
+    document.getElementById("btn").classList.remove("hidden");
+  });
+  document.getElementById("icon2").addEventListener("click", function () {
+    document.getElementById("icon2").classList.add("hidden");
+    document.getElementById("icon1").classList.remove("hidden");
+    document.getElementById("menu").classList.add("hidden");
+    document.getElementById("btn").classList.add("hidden");
+  });
+
+  const links = Array.from(
+    document.querySelectorAll<HTMLAnchorElement>("#menu a")
+  );
+
+  links.forEach((link) => {
+    link.addEventListener("click", function () {
+      links.forEach((l) => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+</script>

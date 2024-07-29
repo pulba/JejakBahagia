@@ -15,6 +15,7 @@ module.exports = {
       dyna: ["Dynalight", "cursive"],
       alex: ["Alex Brush", "cursive"],
       kaushan: ["Kaushan Script", "cursive"],
+      cormorant: ["Cormorant Variable", "serif"],
     },
     extend: {
       animation: {

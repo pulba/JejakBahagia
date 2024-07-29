@@ -15,6 +15,7 @@
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/tailwind": "^5.1.0",
     "@astrojs/vercel": "latest",
+    "@fontsource-variable/cormorant": "^5.0.14",
     "@fontsource-variable/josefin-sans": "^5.0.20",
     "@fontsource/alex-brush": "^5.0.20",
     "@fontsource/dynalight": "^5.0.20",

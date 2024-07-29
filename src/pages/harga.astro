@@ -4,194 +4,70 @@ import '@fontsource/poppins';
 import { Icon } from 'astro-iconify';
 ---
 
-<Page title="Harga" desc="Ini halaman harga dari undangan jejak bahagia" subs="Apapun Paketnya Tetep Ramah Dikantong">
-  <div class="grid grid-cols-1 sm:grid-cols-2 items-center w-full mx-auto max-w-screen-md gap-4 *:rounded-md *:font-poppins *:overflow-hidden *:relative *:flex *:flex-col *:justify-between *:border *:p-12 *:h-full">
-      <div class="bg-white border-gray-400">
-        <div>
-            <p class="text-2xl font-semibold text-gray-800">Basic</p>
-            <p class="mt-2 text-pink-600 line-through">Rp. 100.000</p>
-            <h4 class="text-4xl font-semibold flex text-gray-800"><sup class="text-base">Rp</sup>49.000</h4>
-            <p class="text-gray-500">Masa Aktif 30 Hari</p>
-        </div>
-        <hr class="h-px mb-4 bg-gray-500 w-full mx-auto border-0">
-        <div class="space-y-2 *:flex *:gap-2">
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Tamu Tanpa Batas</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Gallery foto (max 4)</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Countdown Timer</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">RSVP</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Amplop Digital</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Quote</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Background Music
-                </span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Revisi 2 kali</span>
-            </div>
-        </div>
+<Page title="Harga" desc="Ini halaman harga dari undangan jejak bahagia" subs="Banyak pilihan tea dengan harga yang tetap sama">
+    <section>
+      <div class="container px-6 mx-auto">
+        <div class="max-w-screen-md mx-auto rounded-md font-poppins overflow-hidden bg-white p-6 relative flex flex-col justify-between items-center gap-4 border border-gray-400">
+          <div>
+              <p class="mt-2 text-blue-700 line-through">Rp. 150.000</p>
+              <h4 class="text-4xl font-semibold flex text-gray-600"><sup class="text-base">Rp</sup>75.000</h4>
+              <p class="text-gray-500">Masa Aktif 1 Tahun</p>
+          </div>
+          <div class="space-y-2 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-8 *:flex *:gap-2">
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Tamu Tanpa Batas</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Gallery foto (max 8)</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Dashboard undangan</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Kirim undangan mudah</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Bebas pilih Tema</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Custom musik latar</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Form RSVP & Ucapan
+                  </span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Amplop Digital</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Hitung Mundur Waktu Acara</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Integrasi Google Maps</span>
+              </div>
+              <div>
+                <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-blue-700" />
+                  <span class="text-gray-700">Revisi 3 Kali</span>
+              </div>
+          </div>
 
-        <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-          <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-pink-600 rounded-md hover:bg-gray-800">
-            Buat Undangan
-          </button>
-        </a>
-        
+          <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
+            <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-blue-700 rounded-md hover:bg-gray-600">
+              Buat Undangan
+            </button>
+          </a>
+          
+        </div>
       </div>
-      <div class="bg-white border-gray-400">
-        <div class="absolute right-0 top-0 h-16 w-16">
-          <div class="absolute right-[-34px] top-[32px] w-[170px] transform rotate-[44deg] bg-pink-600 text-center text-white  font-bold py-1">Popular</div>
-        </div>
-        <div>
-            <p class="text-2xl font-semibold text-gray-800">Silver</p>
-            <p class="mt-2 text-pink-600 line-through">Rp. 150.000</p>
-            <h4 class="text-4xl font-semibold flex text-gray-800"><sup class="text-base">Rp</sup>75.000</h4>
-            <p class="text-gray-500">Masa Aktif 3 Bulan</p>
-        </div>
-        <hr class="h-px mb-4 bg-gray-500 w-full mx-auto border-0">
-        <div class="space-y-2 *:flex *:gap-2">
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Semua Fitur Tema Basic</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Custom Nama Tamu</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Profil Mempelai</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Gallery foto (max 6)</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Request Lagu</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Embed Map</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Revisi 3 kali</span>
-            </div>
-        </div>
-
-        <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-          <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-pink-600 rounded-md hover:bg-gray-800">
-            Buat Undangan
-          </button>
-        </a>
-        
-      </div>
-      <div class="bg-pink-600 border-pink-600">
-        <div class="absolute right-0 top-0 h-16 w-16">
-          <div class="absolute right-[-34px] top-[32px] w-[170px] transform rotate-[44deg] bg-white text-center text-pink-600 font-bold py-1">BEST SELLER</div>
-        </div>
-        <div class="text-white">
-            <p class="text-2xl font-semibold">Diamond</p>
-            <p class="mt-2 line-through">Rp. 200.000</p>
-            <h4 class="text-4xl font-semibold flex"><sup class="text-base">Rp</sup>99.000</h4>
-            <p>Masa Aktif 1 Tahun</p>
-        </div>
-        <hr class="h-px mb-4 bg-white w-full mx-auto border-0">
-        <div class="space-y-2 *:flex *:gap-2">
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Semua Fitur Tema Silver</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Custom Nama Tamu</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Gallery foto (max 10)</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Fitur Live Streaming</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Video Prewed</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Love Story / Story Line
-                </span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-6 h-6 text-white" />
-                <span class="text-white">Revisi 4 kali</span>
-            </div>
-        </div>
-
-        <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-          <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-gray-800 text-center capitalize transition-colors duration-300 transform bg-white rounded-md hover:bg-gray-800 hover:text-white">
-            Buat Undangan
-          </button>
-        </a>
-      </div>
-      <div class="bg-white border-gray-400">
-        <div>
-            <p class="text-2xl font-semibold text-gray-800">Exclusive</p>
-            <p class="mt-2 text-pink-600 line-through">Rp. 300.000</p>
-            <h4 class="text-4xl font-semibold flex text-gray-800"><sup class="text-base">Rp</sup>149.000</h4>
-            <p class="text-gray-500">Masa Aktif 1 Tahun</p>
-        </div>
-        <hr class="h-px mb-4 bg-gray-500 w-full mx-auto border-0">
-        <div class="space-y-2 *:flex *:gap-2">
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Semua Fitur Tema Diamond</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Custom Tema</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Request Suku & Adat</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Gallery foto (max 15)</span>
-            </div>
-            <div>
-              <Icon name="mdi:success-circle-outline" class="w-5 h-5 text-pink-600" />
-                <span class="text-gray-700">Revisi Unlimited</span>
-            </div>
-        </div>
-
-        <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!">
-          <button class="w-full mx-auto flex justify-center items-center px-4 py-2 mt-5 text-white text-center capitalize transition-colors duration-300 transform bg-pink-600 rounded-md hover:bg-gray-800">
-            Buat Undangan
-          </button>
-        </a>
-        
-      </div>
-  </div>
+  </section>
 </Page>

@@ -1,14 +1,12 @@
 ---
 layout: '../demo/wedding-6.astro'
 slug: 'posts/wedding-6'
-title: 'Wedding-6'
-type: 'Exlusive - 03'
-exclusive: 4
-desc: 'Tema Exlusive'
+title: 'Tema 06'
+desc: 'Tema 06'
+price: 'Rp 75.000'
+unprice: 'Rp 150.000'
+number: 6
 countdown: "June 5, 2025 15:37:25"
-price: 'Rp 149.000'
-unprice: 'Rp 300.000'
-number: 4
 img:
   url: '/assets/demo-6.webp'
   alt: jejak bahagia
@@ -16,16 +14,18 @@ img:
 #colors
 bgfs: 'bg-red-100'
 bgsc: 'bg-red-500'
-bgth: 'bg-gray-800'
+bgth: 'bg-red-950'
 
 txfs: 'text-red-100'
 txsc: 'text-red-500'
 txth: 'text-gray-800'
 
-bdr: 'border-red-500'
+from: 'from-red-950'
+before: 'before:bg-red-500'
+bdr: 'border-white'
 
 # Img header
-cover: '/assets/img-5.webp'
+cover: '/assets/img-23.webp'
 imgsc: '/assets/img-6.webp'
 bg: '/assets/dekor-24.webp'
 
@@ -46,13 +46,14 @@ imgstory5: '/assets/img-9.webp'
 imgstory6: '/assets/img-10.webp'
 imgstory7: '/assets/img-11.webp'
 imgstory8: '/assets/img-12.webp'
+add1: '/assets/img-29.webp'
+add2: '/assets/img-4.webp'
 
 # data mempelai
-male: "Remeo"
-fullmale: "Remeo Alexa"
-female: "Juliet"
-fullfemale: "Juliet Kapolo"
-date: Jumat, 05 Januari 2030
+male: "Raffan"
+fullmale: "Raffan Alfatih"
+female: "Arum"
+fullfemale: "Arum Nur"
 music: yovie-nuno-janji-suci
 
 childmale: "Putra kelima dari Pasangan"
@@ -75,23 +76,29 @@ logofml: /assets/bca.png
 bankfml: "BCA"
 namebankfml: "Juliet Kapolo"
 numberbankfml: "123456789"
+
 # waktu & tempat acara
+datefs: Jumat, 05 Januari 2030
+datesc: Jumat, 05 Januari 2030
+dateth: Jumat, 05 Januari 2030
 timefs: 08:00 - 09:00 WIB
 timesc: 10:00 - 11:00 WIB
 timeth: 13:00 - end WIB
-addressfs: Masjid Kampus UGM
-addresssc: Jogja Expo Center
-addressth: Rumah Mempelai Wanita
+locationfs: BMasjid Kampus UGM
+locationsc: Masjid Kampus UGM
+locationth: Masjid Kampus UGM
+addressfs: Jl. Raya Janti Jl. Wonocatur, Wonocatur, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
+addresssc: Jl. Raya Janti Jl. Wonocatur, Wonocatur, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
+addressth: Jl. Raya Janti Jl. Wonocatur, Wonocatur, Banguntapan, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55198
 mapsfs: https://maps.app.goo.gl/fpXEChVvcrKveA468 
 mapssc: https://maps.app.goo.gl/fpXEChVvcrKveA468
 mapsth: https://maps.app.goo.gl/fpXEChVvcrKveA468
-
-
+linkmaps: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3953.144855136041!2d110.3807054!3d-7.7744606!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b4fe07a7f9%3A0x2f7c4fd3d72616bb!2sJl.%20Prof.%20DR.%20Drs%20Notonagoro%2C%20Karang%20Malang%2C%20Caturtunggal%2C%20Kec.%20Depok%2C%20Kabupaten%20Sleman%2C%20Daerah%20Istimewa%20Yogyakarta%2055281!5e0!3m2!1sid!2sid!4v1717643524613!5m2!1sid!2sid
 
 # story love
 storyfs: "Di sebuah kafe yang nyaman di tengah kota, dua orang asing, Yanti dan Yanto, tak sengaja bertemu. Yanto, seorang fotografer yang sedang mencari inspirasi untuk proyek terbarunya, sedangkan Yanti, seorang penulis lepas yang sedang mencatat ide-ide baru untuk novel romantisnya, tak menyadari bahwa matanya sedang bertatapan dengan seorang pria tampan di sisi lain kafe."
 storysc: "Beberapa bulan kemudian, Romeo memutuskan bahwa dia tidak ingin kehilangan Juliet dari hidupnya. Dengan hati yang penuh harap, dia menyiapkan proposal yang tak terlupakan. Di bawah langit malam yang cerah, di taman yang dihiasi dengan ratusan lentera, Romeo berlutut di hadapan Juliet."
 storyth: "Dari pertemuan tak terduga di kafe hingga momen indah pertunangan mereka di taman yang dipenuhi lentera, cerita cinta Juliet dan Romeo adalah bukti bahwa takdir bisa membawa dua hati yang saling mencari dan membuat mereka bersatu dalam cinta yang abadi."
 
-quote: "And everything that We have made in pairs so that you may remember (the greatness of Allah). Q.S Adz-Dzariat verse 49"
+quote: "Maha Suci Allah yang telah menciptakan manusia dengan berpasang-pasangan. Dengan memohon Rahmat dan Ridho Allah SWT, kami bermaksud mengundang Saudara/i dalam acara resepsi pernikahan kami."
 ---
