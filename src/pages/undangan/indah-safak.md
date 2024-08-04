@@ -4,7 +4,7 @@ title: Indah-Safak
 slug: undangan/indah-safak
 type: Indah-Safak
 desc: Indah-Safak
-countdown: Jun 24, 2024 08:00:00
+countdown: "Jun 24, 2024 08:00:00"
 img:
   url: '/assets/indah4.webp'
   alt: jejak bahagia
@@ -14,12 +14,12 @@ bgfs: 'bg-orange-900/80'
 bgsc: 'bg-orange-100'
 bgth: 'bg-orange-100'
 
-txfs: 'text-orange-900/80'
-txsc: 'text-orange-900/80'
+txfs: 'text-orange-700'
+txsc: 'text-orange-700'
 txth: 'text-orange-100'
 
-bdr: 'border-yellow-900/80'
-from: 'from-sky-800'
+bdr: 'border-orange-700'
+from: 'from-orange-100'
 before: 'before:bg-orange-100'
 
 # Img header
@@ -53,7 +53,6 @@ male: "Safak"
 fullmale: "Musafak"
 female: "Indah"
 fullfemale: "Indah Agustira, S.S"
-date: "Senin, 24 Juni 2024"
 
 childmale: "Putra kedua dari Pasangan"
 childfemale: "Putri ketiga dari Pasangan"
@@ -74,6 +73,9 @@ namebankfml: "Indah Agustira"
 numberbankfml: "565601027298535"
 
 # Waktu & tempat acara
+datefs: Senin, 24 Juni 2024
+datesc: Senin, 24 Juni 2024
+dateth: Senin, 24 Juni 2024
 timefs: "08:00 WIB - 10:00 WIB"
 timesc: "10:00 WIB - 21:00 WIB"
 locationfs: "Beringin Tengah, Ringin Jaya Kec. BNS"

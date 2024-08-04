@@ -385,16 +385,81 @@ data["datefs"] = "Jumat, 05 Januari 2030"
             Our Moments
           </h2>
         </div>
-        <div class="gap-4 columns-2 md:columns-3 mt-5 *:rounded-lg *:w-full *:mb-6 *:opacity-0">
-          <img class="fade-right aspect-video" src={frontmatter.imgstory1} />
-          <img class="fade-down aspect-square" src={frontmatter.imgstory2} />
-          <img class="fade-left aspect-square" src={frontmatter.imgstory3} />
-          <img class="fade-down aspect-square" src={frontmatter.imgstory4} />
-          <img class="fade-up aspect-square" src={frontmatter.imgstory5} />
-          <img class="fade-left aspect-video" src={frontmatter.imgstory1} />
-          <img class="fade-left aspect-square" src={frontmatter.imgstory3} />
-          <img class="fade-down aspect-video" src={frontmatter.imgstory1} />
-          <img class="fade-up aspect-square" src={frontmatter.imgstory7} />
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 justify-center gap-2 pb-20 *:w-full *:md:max-w-4xl *:p-1 *:relative"
+        >
+          <div class="fade-right opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory1}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="fade-down opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory2}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="fade-up opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory3}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="fade-left opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory4}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="fade-up opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory5}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="zoom-out opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory6}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="fade-up opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory7}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
+          <div class="fade-left opacity-0">
+            <div class="truncate">
+              <img
+                src={frontmatter.imgstory8}
+                alt="Foto 1"
+                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -428,7 +493,7 @@ data["datefs"] = "Jumat, 05 Januari 2030"
     <Footerpost />
     <Audio />
     <audio id="myAudio" loop class="hidden">
-      <source src=`/assets/${frontmatter.music}.opus` type="audio/mpeg">
+      <source src=`/assets/music/${frontmatter.music}.mp3` type="audio/mpeg">
     </audio>
     <Animation /> 
     <Payment />

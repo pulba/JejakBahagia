@@ -45,6 +45,8 @@ imgstory3: '/assets/desti8.webp'
 imgstory4: '/assets/desti4.webp'
 imgstory5: '/assets/desti5.webp'
 imgstory6: '/assets/desti6.webp'
+imgstory7: '/assets/desti6.webp'
+imgstory8: '/assets/desti6.webp'
 add1: '/assets/desti3.webp'
 add2: '/assets/desti1.webp'
 
@@ -83,7 +85,7 @@ numberbankfml: "082179663448"
 timefs: 09:00 WIB S/d Selesai
 timesc: 10:00 WIB S/d Selesai
 timeth: 09:00 WIB S/d Selesai
-date: Senin, 1 Juli 2024
+datefs: Senin, 1 Juli 2024
 datesc: Senin, 1 Juli 2024
 dateth: Minggu, 30 Juni 2024
 countdown: "Jul 1, 2024 09:00:00"
@@ -96,7 +98,7 @@ locationth: Dusun III Desa Sebau Kec. Gelumbang, Kab. Muara Enim, SumSel
 mapsfs: https://maps.app.goo.gl/vKjbGTgmgJZGAws16 
 mapssc: https://maps.app.goo.gl/vKjbGTgmgJZGAws16
 mapsth: https://maps.app.goo.gl/SehP5b9mBrKHn5jY8
-
+linkmaps: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3983.4815086757876!2d104.35055559999999!3d-3.2296388999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zM8KwMTMnNDYuNyJTIDEwNMKwMjEnMDIuMCJF!5e0!3m2!1sid!2sid!4v1722753769323!5m2!1sid!2sid
 
 quote: "Tidak ada yang lebih indah selain berbagi hidup dengan seseorang yang mengerti dan mendukungmu tanpa syarat.  Dan tidak ada perasaan yang lebih indah selain menemukan seseorang yang menjadi tempat pulang terbaik."
 ---

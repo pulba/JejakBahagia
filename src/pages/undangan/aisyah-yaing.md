@@ -48,6 +48,8 @@ imgstory3: '/assets/aisyah3.webp'
 imgstory4: '/assets/aisyah4.webp'
 imgstory5: '/assets/aisyah5.webp'
 imgstory6: '/assets/aisyah4.webp'
+imgstory7: '/assets/aisyah4.webp'
+imgstory8: '/assets/aisyah4.webp'
 add1: '/assets/aisyah1.webp'
 add2: '/assets/img-4.webp'
 
@@ -61,7 +63,6 @@ male: "Yaing"
 fullmale: "Muhammad Yaing"
 female: "Aisyah"
 fullfemale: "Aisyah Syukri"
-date: Sabtu, 29 Juni 2024
 music: Lagu Pernikahan Kita
 
 childmale: "Putra ketiga dari Pasangan"
@@ -83,6 +84,9 @@ logofml: /assets/nobank.png
 namebankfml: "Tidak Ada Rekening"
 numberbankfml: "123456789"
 # waktu & tempat acara
+datefs: Sabtu, 29 Juni 2024
+datesc: Sabtu, 29 Juni 2024
+dateth: Sabtu, 29 Juni 2024
 timefs: 11:00 WITA - Selesai
 timesc: 11:00 WITA - Selesai
 timeth: 13:00 WITA - Selesai
@@ -95,6 +99,7 @@ locationsc: Jln. Poros Belawa-Lancirang Siduntung
 mapsfs: https://maps.app.goo.gl/gcgFdB2gvzYM77W86?g_st=ac 
 mapssc: https://maps.app.goo.gl/gcgFdB2gvzYM77W86?g_st=ac
 mapsth: https://maps.app.goo.gl/gcgFdB2gvzYM77W86?g_st=ac
+linkmaps: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.2801037655736!2d119.88456887097878!3d-4.358480736986735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d95f66fdc86727f%3A0x1e0e72a954851b1!2sJl.%20Kemakmuran%2C%20Kec.%20Lalabata%2C%20Kabupaten%20Soppeng%2C%20Sulawesi%20Selatan!5e0!3m2!1sid!2sid!4v1722753645164!5m2!1sid!2sid
 
 quote: "Tidak ada yang lebih indah selain berbagi hidup dengan seseorang yang mengerti dan mendukungmu tanpa syarat.  Dan tidak ada perasaan yang lebih indah selain menemukan seseorang yang menjadi tempat pulang terbaik."
 ---

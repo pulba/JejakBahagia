@@ -22,7 +22,7 @@ txth: 'text-purple-900'
 txfr: 'text-yellow-500'
 
 bdr: 'border-purple-900'
-from: 'from-purple-900'
+from: 'before:from-purple-900'
 before: 'before:bg-black'
 
 # Img header
@@ -45,13 +45,14 @@ imgstory4: '/assets/img-8.webp'
 imgstory5: '/assets/img-9.webp'
 imgstory6: '/assets/img-10.webp'
 imgstory7: '/assets/img-30.webp'
+imgstory8: '/assets/img-30.webp'
 
 # data mempelai
 male: "Remeo"
 fullmale: "Remeo Alexa"
 female: "Juliet"
 fullfemale: "Juliet Kapolo"
-music: yovie-nuno-janji-suci
+music: john-legend-all-of-me
 
 childmale: "Putra kelima dari Pasangan"
 childfemale: "Putri Pertama dari Pasangan"
@@ -65,7 +66,7 @@ citymale: "Palembang"
 cityfemale: "Makkasar"
 
 # name bank
-logoml: /assets/bri.png
+logoml: /assets/gopay.png
 bankml: "BRI"
 namebankml: "Remeo Alexa"
 numberbankml: "123456789"

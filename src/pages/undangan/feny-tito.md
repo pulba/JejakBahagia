@@ -9,7 +9,7 @@ img:
   alt: jejak bahagia
 
 # Colors
-bgfs: 'bg-zinc-200'
+bgfs: 'bg-zinc-400'
 bgsc: 'bg-zinc-600'
 bgth: 'bg-zinc-900'
 bgfr: 'bg-zinc-900'
@@ -42,7 +42,6 @@ fullmale: "Tito Sukoco, A.Md"
 female: "Feny"
 fml: "F"
 fullfemale: "Feny Dwi F."
-date: "Rabu, 26 Juni 2024"
 countdown: Jun 26, 2024 09:00:00
 
 childmale: "Putra kedelapan dari Pasangan"
@@ -64,6 +63,9 @@ namebankfml: "Feny Dwi Fandi"
 numberbankfml: "7772555957"
 
 # Waktu & tempat acara
+datefs: Rabu, 26 Juni 2024
+datesc: Rabu, 26 Juni 2024
+dateth: Rabu, 26 Juni 2024
 timefs: "09.00 WIB - Selesai"
 timesc: "13.00 WIB - Selesai"
 locationfs: "Jl. Serayu No.06, Panderejo, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68415"

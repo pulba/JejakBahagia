@@ -57,7 +57,7 @@ male: "Hariyanto"
 fullmale: "Hariyanto Rajata"
 female: "Vanya"
 fullfemale: "Vanya Purwanti"
-music: yovie-nuno-janji-suci
+music: Beautiful In White
 
 childmale: "Putra kelima dari Pasangan"
 childfemale: "Putri Pertama dari Pasangan"

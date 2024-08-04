@@ -49,7 +49,7 @@ male: "Remeo"
 fullmale: "Remeo Alexa"
 female: "Juliet"
 fullfemale: "Juliet Kapolo"
-music: yovie-nuno-janji-suci
+music: Beautiful In White
 
 childmale: "Putra kelima dari Pasangan"
 childfemale: "Putri Pertama dari Pasangan"

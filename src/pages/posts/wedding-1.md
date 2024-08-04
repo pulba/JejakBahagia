@@ -60,7 +60,7 @@ male: "Remeo"
 fullmale: "Remeo Alexa"
 female: "Juliet"
 fullfemale: "Juliet Kapolo"
-music: yovie-nuno-janji-suci
+music: andmesh-kamaleng-cinta-luar-biasa
 
 childmale: "Putra kelima dari Pasangan"
 childfemale: "Putri Pertama dari Pasangan"
