@@ -81,7 +81,7 @@ numberbankfml: "085789252003"
 datefs: Kamis, 26 September 2024
 datesc: Kamis, 26 September 2024
 dateth: Kamis, 26 September 2024
-timefs: 10:00 WIB - Selesai
+timefs: 08:00 WIB - Selesai
 timesc: 10:00 WIB - Selesai
 timeth: 10:00 WIB - Selesai
 countdown: "September 26, 2024 10:00:00"
