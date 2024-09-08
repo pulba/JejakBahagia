@@ -340,81 +340,6 @@ if(!frontmatter) {
         <iframe src=`${frontmatter.linkmaps}` style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=`fade-up opacity-0 mx-auto mt-12 w-full max-w-3xl h-96 rounded-lg p-1 ${frontmatter.bgth}`></iframe>
       </div>
     </section>
-    <section class="animasi7 overflow-hidden relative">
-      <div class="absolute overflow-hidden z-20 w-full h-[100%] [&>*]:absolute [&>*]:object-cover [&>*]:w-1/2 [&>*]:lg:w-1/5">
-        <div>
-          <img src=`${frontmatter.dekorsc}` class="" alt="JejakBahagia" />
-        </div>
-        <div class="right-0 top-0">
-          <img src=`${frontmatter.dekorsc}` class="rotate-90 right-0 top-0" alt="JejakBahagia" />
-        </div>
-        <div class="left-0 bottom-0">
-          <img src=`${frontmatter.dekorsc}` class="rotate-90 -scale-100" alt="JejakBahagia" />
-        </div>
-        <div class="bottom-0 right-0">
-          <img src=`${frontmatter.dekorsc}` class="rotate-180" alt="JejakBahagia" />
-        </div>
-      </div>
-      <div class="container mx-auto px-6 py-20 text-center">
-        <div class=`${frontmatter.txsc}`>
-          <h2 class="fade-left opacity-0 text-2xl font-bold mt-5 font-cormorant">The Journey</h2>
-          <h2 class="fade-right opacity-0 text-center font-cormorant text-6xl lg:text-8xl">Our Story</h2>
-        </div>
-        <div class="mt-12 *:rounded-lg *:shadow-lg *:mx-auto *:my-5 *:w-full *:md:w-3/4 *:p-10">
-          <div class=`fade-up opacity-0 border ${frontmatter.bdr}`>
-            <div class="md:flex mx-auto gap-5 justify-center">
-              <div class="w-full md:w-1/4">
-                <img
-                  class="rounded-lg"
-                  src=`${frontmatter.imgstory9}`
-                  alt="JejakBahagia"
-                />
-              </div>
-              <div class="text-left font-cormorant">
-                <p class=`text-2xl font-bold mt-5 md:mt-0 mb-3 ${frontmatter.txth}`>Fist Time</p>
-                <p class="max-w-prose">
-                  {frontmatter.storyfs}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class=`fade-up opacity-0 border ${frontmatter.bdr}`>
-            <div class="md:flex mx-auto gap-5 justify-center">
-              <div class="w-full md:w-1/4">
-                <img
-                  class="rounded-lg"
-                  src=`${frontmatter.imgstory10}`
-                  alt="JejakBahagia"
-                />
-              </div>
-              <div class="text-left font-cormorant">
-                <p class=`text-2xl font-bold mt-5 md:mt-0 mb-3 ${frontmatter.txth}`>Fist Time</p>
-                <p class="max-w-prose">
-                  {frontmatter.storysc}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class=`fade-up opacity-0 border ${frontmatter.bdr}`>
-            <div class="md:flex mx-auto gap-5 justify-center">
-              <div class="w-full md:w-1/4">
-                <img
-                  class="rounded-lg"
-                  src=`${frontmatter.imgstory11}`
-                  alt="JejakBahagia"
-                />
-              </div>
-              <div class="text-left font-cormorant">
-                <p class=`text-2xl font-bold mt-5 md:mt-0 mb-3 ${frontmatter.txth}`>Fist Time</p>
-                <p class="max-w-prose">
-                  {frontmatter.storyth}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="animasi8 overflow-hidden">
       <div class="container mx-auto px-6 py-20">
         <div class=`text-center my-5 mb-10 ${frontmatter.txsc}`>
@@ -578,8 +503,8 @@ if(!frontmatter) {
         <Rsvp color="gray-600" />
           
       </div>
+      <Footerpost />
     </section>
-    <Footerpost />
     <Audio />
     <audio id="myAudio" loop class="hidden">
       <source src=`/assets/music/${frontmatter.music}.mp3` type="audio/mpeg">

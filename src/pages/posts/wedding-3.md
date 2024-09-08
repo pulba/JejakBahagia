@@ -13,7 +13,7 @@ img:
 
 #colors
 bgfs: 'bg-amber-100'
-bgsc: 'bg-amber-800'
+bgsc: 'bg-amber-100'
 bgth: 'bg-amber-950'
 
 txfs: 'text-amber-100'
@@ -75,7 +75,7 @@ citymale: "Palembang"
 cityfemale: "Makkasar"
 
 # name bank
-logoml: /assets/bri.png
+logoml: /assets/dana.png
 bankml: "BRI"
 namebankml: "Remeo Alexa"
 numberbankml: "123456789"

@@ -354,82 +354,6 @@ data["datefs"] = "Jumat, 05 Januari 2030"
         <iframe src=`${frontmatter.linkmaps}` style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=`fade-up opacity-0 mx-auto mt-12 w-full max-w-3xl h-96 rounded-lg p-1 ${frontmatter.bgth}`></iframe>
       </div>
     </section>
-    <section class="animasi6 relative overflow-hidden">
-      <div class="absolute overflow-hidden z-20 w-full h-[100%] [&>*]:absolute [&>*]:object-cover [&>*]:w-1/2 [&>*]:lg:w-1/5">
-        <div class="animate-fadedown">
-            <img src=`${frontmatter.dekorfs}` class="" alt="JejakBahagia" />
-        </div>
-        <div class="animate-fadedown right-0 top-0">
-            <img src=`${frontmatter.dekorfs}` class="rotate-90 right-0 top-0" alt="JejakBahagia" />
-        </div>
-        <div class="animate-fadeup left-0 bottom-0">
-            <img src=`${frontmatter.dekorfs}` class="rotate-90 -scale-100" alt="JejakBahagia" />
-        </div>
-        <div class="animate-fadeup bottom-0 right-0">
-            <img src=`${frontmatter.dekorfs}` class="rotate-180" alt="JejakBahagia" />
-        </div>
-      </div>
-      <div class="container mx-auto py-20 text-center">
-        <div class:list={[`${frontmatter.txfs}`]}>
-          <h2 class="fade-right opacity-0 text-2xl font-bold font-josefin">The Journey</h2>
-          <h2 class="fade-left opacity-0 text-center font-cormorant text-6xl lg:text-8xl">Our Story</h2>
-        </div>
-        <div class="splide h-full md:h-96 overflow-hidden mt-10">
-          <div class="splide__track h-full md:h-96 overflow-visible">
-            <ul class="splide__list flex gap-4">
-              <li
-              class="splide__slide w-full flex bg-white overflow-hidden">
-              <img
-                src={frontmatter.imgstory1}
-                alt="Foto 1"
-                class="object-cover aspect-video"/>
-              </li>
-              <li
-              class="splide__slide w-full flex flex-col items-center justify-center overflow-hidden px-8 space-y-5">
-               <div class="hidden sm:block border border-l-[1px] border-red-500 h-16"></div>
-               <p class:list={[`text-3xl font-cormorant ${frontmatter.txfs}`]}>Fist Time</p>
-                <p class=`max-w-prose font-josefin ${frontmatter.txfs}`>
-                  {frontmatter.storyfs}
-                </p>
-                <div class="hidden sm:block border border-l-[1px] border-red-500 h-16"></div>
-              </li>
-              <li
-              class="splide__slide w-full flex bg-white overflow-hidden">
-              <img
-                src={frontmatter.imgstory1}
-                alt="Foto 1"
-                class="object-cover aspect-video"/>
-              </li>
-              <li
-              class="splide__slide w-full flex flex-col items-center justify-center overflow-hidden px-8 space-y-5">
-               <div class="hidden sm:block border border-l-[1px] border-red-500 h-16"></div>
-               <p class:list={[`text-3xl font-cormorant ${frontmatter.txfs}`]}>Fist Love</p>
-                <p class=`max-w-prose font-josefin ${frontmatter.txfs}`>
-                  {frontmatter.storysc}
-                </p>
-                <div class="hidden sm:block border border-l-[1px] border-red-500 h-16"></div>
-              </li>
-              <li
-              class="splide__slide w-full flex bg-white overflow-hidden">
-              <img
-                src={frontmatter.imgstory1}
-                alt="Foto 1"
-                class="object-cover aspect-video"/>
-              </li>
-              <li
-              class="splide__slide w-full flex flex-col items-center justify-center overflow-hidden px-8 space-y-5">
-               <div class="hidden sm:block border border-l-[1px] border-red-500 h-16"></div>
-               <p class:list={[`text-3xl font-cormorant ${frontmatter.txfs}`]}>Wedding</p>
-                <p class=`max-w-prose font-josefin ${frontmatter.txfs}`>
-                  {frontmatter.storyth}
-                </p>
-                <div class="hidden sm:block border border-l-[1px] border-red-500 h-16"></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="animasi8 relative overflow-hidden">
       <div class="absolute overflow-hidden z-20 w-full h-[100%] [&>*]:absolute [&>*]:object-cover [&>*]:w-1/2 [&>*]:lg:w-1/5">
         <div class="animate-fadedown">
@@ -541,8 +465,8 @@ data["datefs"] = "Jumat, 05 Januari 2030"
         <Rsvp color="gray-600" />
           
       </div>
+      <Footerpost />
     </section>
-    <Footerpost />
     <Audio />
     <audio id="myAudio" loop class="hidden">
       <source src=`/assets/music/${frontmatter.music}.mp3` type="audio/mpeg">

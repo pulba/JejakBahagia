@@ -135,19 +135,27 @@ if(!frontmatter) {
         WEDDING INVITATION
     </h1>
     <div class=`text-center ${frontmatter.txsc}`>
+      <div class="flex flex-col md:flex-row gap-x-4 justify-center items-center *:font-nautigal *:font-thin *:max-[350px]:text-6xl *:text-7xl *:lg:text-9xl *:relative">
       <h2
-          class="animate-faderight font-nautigal font-thin w-full max-[350px]:text-5xl text-7xl lg:text-9xl relative">{frontmatter.female } & {frontmatter.male }
+          class="animate-faderight ">{frontmatter.female } 
         </h2>
+        <div class="">
+          <Icon name="file-icons:ring" class="animate-fadedown text-center w-8 md:w-12" />
+        </div>
+      <h2
+          class="animate-fadeleft">{frontmatter.male }
+        </h2>
+      </div>
       <p class="animate-faderight mt-2">Kpd Bpk/Ibu/Saudara/i</p>
         <h4 id="invite-name" class="animate-fadeleft text-xl font-bold my-3 capitalize">
           <Namatamu /> nama tamu
         </h4>
         <label for="toggle" id="toaudio"
-          class=`animate-fadeup w-fit mx-auto mt-5 px-4 py-2 relative flex gap-1 ${frontmatter.txfs} ${frontmatter.bgsc}`>Open Invitation </label>
+          class=`animate-fadeup w-fit mx-auto mt-5 px-6 py-2 font-bold rounded-md relative flex gap-1 border ${frontmatter.txfs} ${frontmatter.bgth}`>Open Invitation </label>
     </div>
   </div>
 </section>
-<main id="myDIV" class=`hidden peer-checked:block scroll-smooth ${frontmatter.bgfs}`>
+<main id="myDIV" class="hidden peer-checked:block scroll-smooth">
     <section class=`animasi2 relative bg-cover bg-center overflow-hidden before:content-[''] before:bg-gradient-to-t before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from} ${frontmatter.hidden}` style={`background-image:url(${frontmatter.imgsc})`}>
       <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div class="animate-faderight ">
@@ -195,7 +203,7 @@ if(!frontmatter) {
           <Countdown>
         </div>
     </section>
-    <section class="animasi4 overflow-hidden relative">
+    <section class=`animasi4 overflow-hidden relative ${frontmatter.bgsc}`>
       <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div>
           <img src=`${frontmatter.dekorfs}` class="" alt="JejakBahagia" />
@@ -217,8 +225,8 @@ if(!frontmatter) {
                 <div class=`fade-up opacity-0 font-poppins space-y-3 ${frontmatter.txsc}`>
                 <div>
                   <p class=`text-xl font-medium border-b-2 w-max mx-auto ${frontmatter.bdr}`>{frontmatter.fullfemale }</p>
-                  <p class="text-lg">{frontmatter.childfemale}</p>
-                  <p class=`text-lg font-medium ${frontmatter.txsc}`>
+                  <p class="">{frontmatter.childfemale}</p>
+                  <p class=`font-medium ${frontmatter.txsc}`>
                     {frontmatter.parentfemale }
                   </p>
                   <div class="flex gap-3 text-center justify-center mt-4">
@@ -240,8 +248,8 @@ if(!frontmatter) {
               <div class=`fade-up opacity-0 font-poppins space-y-3 ${frontmatter.txsc}`>
               <div>
                 <p class=`text-xl font-medium border-b-2 w-max mx-auto ${frontmatter.bdr}`>{frontmatter.fullmale }</p>
-                <p class="text-lg">{frontmatter.childmale}</p>
-                <p class=`text-lg font-medium ${frontmatter.txsc}`>
+                <p class="">{frontmatter.childmale}</p>
+                <p class=`font-medium ${frontmatter.txsc}`>
                   {frontmatter.parentmale }
                 </p>
                 <div class="flex gap-3 text-center justify-center mt-4">
@@ -267,11 +275,11 @@ if(!frontmatter) {
     <div class="container py-20 px-6 mx-auto relative z-50">
       <div class="text-center my-5 mb-10">
           <h2 class=`fade-down opacity-0 text-center font-nautigal text-5xl lg:text-8xl ${frontmatter.txsc}`>
-              Event will be organized
+              Tempat & Hari
           </h2>
         </div>
-        <div class=`grid gird-cols-1 md:grid-cols-2  lg:grid-cols-3 max-w-screen-lg w-full mx-auto justify-center items-center gap-4 mt-5 *:mx-auto *:rounded-2xl *:w-full *:h-full *:p-6 *:sm:p-12 *:border ${frontmatter.txsc}`>
-          <div class=`fade-right opacity-0 py-12 rounded-lg px-6 md:px-12 py-8 ${frontmatter.bgfs} ${frontmatter.txth}`>
+        <div class=`grid gird-cols-1 md:grid-cols-2  max-w-screen-md w-full mx-auto justify-center items-center gap-4 mt-5 *:mx-auto *:rounded-2xl *:w-full *:h-full *:p-6 *:sm:p-12 *:border ${frontmatter.txsc}`>
+          <div class=`fade-right opacity-0 py-12 rounded-lg px-6 md:px-12 py-8 ${frontmatter.bgfs} ${frontmatter.txth} ${frontmatter.bdr}`>
             <div class="font-poppins space-y-3">
               <h2 class="text-center font-nautigal text-4xl">Akad Nikah</h2>
               <p class="text-lg font-bold flex gap-2">
@@ -293,7 +301,7 @@ if(!frontmatter) {
               <div class="group">
                 <a href={frontmatter.mapsfs}>
                   <button
-                    class={`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txfs} ${frontmatter.bgsc}`}
+                    class={`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txfs} ${frontmatter.bgth}`}
                   >
                     Google Maps
                     <Icon name="mdi:google-maps" class="w-6 h-6 flex-shrink-0 min-w-[1.5rem]" />
@@ -302,7 +310,7 @@ if(!frontmatter) {
               </div>
             </div>
           </div>
-          <div class=`fade-left opacity-0 py-12 rounded-lg px-6 md:px-12 py-8 ${frontmatter.bgfs} ${frontmatter.txth}`>
+          <div class=`fade-left opacity-0 py-12 rounded-lg px-6 md:px-12 py-8 ${frontmatter.bgfs} ${frontmatter.txth} ${frontmatter.bdr}`>
             <div class="font-poppins space-y-3">
               <h2 class="text-center font-nautigal text-4xl">Resepsi</h2>
               <p class="text-lg font-bold flex gap-2">
@@ -324,38 +332,7 @@ if(!frontmatter) {
               <div class="group">
                 <a href={frontmatter.mapssc}>
                   <button
-                    class={`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txfs} ${frontmatter.bgsc}`}
-                  >
-                    Google Maps
-                    <Icon name="mdi:google-maps" class="w-6 h-6 flex-shrink-0 min-w-[1.5rem]" />
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class=`fade-left opacity-0 py-12 rounded-lg px-6 md:px-12 py-8 ${frontmatter.bgfs} ${frontmatter.txth}`>
-            <div class="font-poppins space-y-3">
-              <h2 class="text-center font-nautigal text-4xl">Tasyakuran</h2>
-              <p class="text-lg font-bold flex gap-2">
-                <Icon name="mdi:date-range" class="w-6 h-6 flex-shrink-0 min-w-[1.5rem]" />
-                {frontmatter.dateth}
-              </p>
-              <p class="text-md flex gap-2">
-                <Icon name="mdi:clock-time-eight-outline" class="w-6 h-6 flex-shrink-0 min-w-[1.5rem]" />
-                {frontmatter.timeth}
-              </p>
-              <p class="flex gap-2">
-                <Icon name="mdi:home" class="w-6 h-6 flex-shrink-0 min-w-max" />
-                {frontmatter.locationth}
-              </p>
-              <p class="flex gap-2 text-left">
-                <Icon name="mdi:google-maps" class="w-6 h-6 flex-shrink-0 min-w-max" />
-                {frontmatter.addressth}
-              </p>
-              <div class="group">
-                <a href={frontmatter.mapsth}>
-                  <button
-                    class={`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txfs} ${frontmatter.bgsc}`}
+                    class={`mx-auto mt-8 flex items-center justify-center rounded-full px-4 py-2 text-center text-sm font-medium ${frontmatter.txfs} ${frontmatter.bgth}`}
                   >
                     Google Maps
                     <Icon name="mdi:google-maps" class="w-6 h-6 flex-shrink-0 min-w-[1.5rem]" />
@@ -365,10 +342,10 @@ if(!frontmatter) {
             </div>
           </div>
         </div>
-        <iframe src=`${frontmatter.linkmaps}` style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=`fade-up opacity-0 mx-auto mt-12 w-full max-w-3xl h-96 rounded-lg p-1 ${frontmatter.bgth}`></iframe>
+        <iframe src=`${frontmatter.linkmaps}` style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=`fade-up opacity-0 mx-auto mt-12 w-full max-w-3xl h-96 rounded-lg p-1 ${frontmatter.bgfs}`></iframe>
     </div>
     </section>
-    <section class="animasi7 overflow-hidden">
+    <section class=`animasi7 overflow-hidden ${frontmatter.bgsc}`>
       <div class="container mx-auto px-6 py-20">
         <div class="text-center my-5 mb-10">
           <h2 class=`fade-down opacity-0 text-center font-nautigal text-5xl lg:text-8xl ${frontmatter.txsc}`>
@@ -381,7 +358,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory1}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -390,7 +367,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory2}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -399,7 +376,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory3}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -408,7 +385,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory4}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -417,7 +394,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory5}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -426,7 +403,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory6}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -435,7 +412,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory7}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -444,7 +421,7 @@ if(!frontmatter) {
               <img
                 src={frontmatter.imgstory8}
                 alt="Foto 1"
-                class="object-cover aspect-video transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
+                class="object-cover aspect-square transition-all duration-700	ease-linear hover:scale-125 hover:duration-700 hover:transition-all hover:ease-linear"
               />
             </div>
           </div>
@@ -467,9 +444,9 @@ if(!frontmatter) {
         </div>
       </div>
       <div class="container py-20 px-6 text-center mx-auto relative z-50">
-        <div class=`text-center my-10 ${frontmatter.txth}`>
+        <div class="text-center my-10">
           <h2 class=`fade-right opacity-0 text-5xl lg:text-8xl font-nautigal ${frontmatter.txsc}`>Wedding Gift</h2>
-          <p class="fade-left opacity-0 max-w-prose mx-auto mt-5 font-josefin">Doa & restu anda di pernikahan kami cukuplah sebagai bingkisan, namun jika anda ingin memberi lebih, kami dengan senang hati menerimanya dan akan semakin melengkapi kebahagiaan kami.</p>
+          <p class=`fade-left opacity-0 max-w-prose mx-auto mt-5 font-josefin ${frontmatter.txfs}`>Doa & restu anda di pernikahan kami cukuplah sebagai bingkisan, namun jika anda ingin memberi lebih, kami dengan senang hati menerimanya dan akan semakin melengkapi kebahagiaan kami.</p>
         </div>
         <div class="flex flex-col md:flex-row gap-8 justify-center items-center w-full max-w-screen-md mx-auto">
           <div class:list={[`fade-down opacity-0 py-8 px-4 md:px-16 mx-auto mt-16 w-full max-w-xs justify-center md:flex mx-auto gap-5 bg-white rounded-lg border-2 ${frontmatter.bdr} shadow-lg`]}>
@@ -479,7 +456,7 @@ if(!frontmatter) {
                 <p class="max-w-prose">{frontmatter.namebankml}</p>
                 <span class="copy-content font-bold">{frontmatter.numberbankml}</span>
                 <div class="btn-copy pt-5">
-                  <button class:list={[`${frontmatter.bgsc} ${frontmatter.txfs} px-5 py-2 rounded-lg`]}>Copy Rekening</button>
+                  <button class:list={[`${frontmatter.bgth} ${frontmatter.txfs} px-5 py-2 rounded-lg`]}>Copy Rekening</button>
                 </div>
                 <span class="copy-message absolute hidden inset-x-0">Rekening dicopy</span>
               </div>
@@ -492,7 +469,7 @@ if(!frontmatter) {
                 <p class="max-w-prose">{frontmatter.namebankfml}</p>
                 <span class="copy-content font-bold">{frontmatter.numberbankfml}</span>
                 <div class="btn-copy pt-5">
-                  <button class:list={[`${frontmatter.bgsc} ${frontmatter.txfs} px-5 py-2 rounded-lg`]}>Copy Rekening</button>
+                  <button class:list={[`${frontmatter.bgth} ${frontmatter.txfs} px-5 py-2 rounded-lg`]}>Copy Rekening</button>
                 </div>
                 <span class="copyMessage absolute hidden inset-x-0">Rekening dicopy</span>
               </div>
@@ -502,8 +479,8 @@ if(!frontmatter) {
       </div>
       </div>
     </section>
-    <section class="animasi10 overflow-hidden relative">
-      <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
+    <section class=`animasi10 overflow-hidden relative ${frontmatter.bgsc}`>
+      <div class="absolute overflow-hidden w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div>
           <img src=`${frontmatter.dekorfs}` class="" alt="JejakBahagia" />
         </div>
@@ -519,17 +496,17 @@ if(!frontmatter) {
       </div>
       <div class="container py-20 z-50 px-6 text-center mx-auto relative">
         <div class:list={[`text-center my-5 mb-10 ${frontmatter.txsc}`]}>
-          <h2 class="fade-right opacity-0 text-4xl md:text-8xl font-nautigal">
+          <h2 class="fade-right opacity-0 text-5xl md:text-8xl font-nautigal">
             Ucapan & Doa
           </h2>
-          <h2 class="fade-right opacity-0 text-xl md:text-2xl font-bold mt-5 font-josefin">Please Confirm Your Attendance</h2>
+          <h2 class="fade-right opacity-0 md:text-2xl font-bold mt-5 font-josefin">Please Confirm Your Attendance</h2>
         </div>
 
         <Rsvp color="gray-600" />
           
       </div>
+      <Footerpost />
     </section>
-    <Footerpost />
     <Audio />
     <audio id="myAudio" loop class="hidden">
       <source src=`/assets/music/${frontmatter.music}.mp3` type="audio/mpeg">

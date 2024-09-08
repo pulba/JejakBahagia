@@ -373,68 +373,6 @@ if(!frontmatter) {
         <iframe src=`${frontmatter.linkmaps}` style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=`fade-up opacity-0 mx-auto mt-12 w-full max-w-3xl h-96 rounded-lg p-1 ${frontmatter.bgth}`></iframe>
       </div>
     </section>
-    <section class="animasi7 overflow-hidden relative">
-      <div class="container mx-auto px-6 py-20 text-center">
-        <div class=`${frontmatter.txfs}`>
-          <h2 class="fade-left opacity-0 text-2xl font-bold mt-5 font-cormorant">The Journey</h2>
-          <h2 class="fade-right opacity-0 text-center font-cormorant text-6xl lg:text-8xl">Our Story</h2>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class=`fade-right opacity-0 rounded shadow-lg mx-auto my-5 w-full p-10 ${frontmatter.bgfs}`>
-            <div class="flex flex-col mx-auto gap-2 justify-center">
-              <div class="w-full">
-                <img
-                  class="rounded-lg"
-                  src={frontmatter.imgstory9}
-                  alt="JejakBahagia"
-                />
-              </div>
-              <div class="text-left font-poppins">
-                <p class=`text-5xl mt-5 md:mt-0 font-cormorant mb-3 ${frontmatter.txsc}`>Fist Time</p>
-                <p class=`max-w-prose ${frontmatter.txth}`>{frontmatter.storyfs}
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class=`fade-right opacity-0 rounded shadow-lg mx-auto my-5 w-full p-10 ${frontmatter.bgfs}`>
-            <div class="lex flex-col mx-auto gap-2 justify-center">
-              <div class="w-full">
-                <img
-                  class="rounded-lg"
-                  src={frontmatter.imgstory10}
-                  alt="JejakBahagia"
-                />
-              </div>
-              <div class="text-left font-poppins">
-                <p class=`text-5xl mt-5 md:mt-0 font-cormorant mb-3 ${frontmatter.txsc}`>
-                  Menyatakan Cinta
-                </p>
-                <p class=`max-w-prose ${frontmatter.txth}`>{frontmatter.storysc}
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div class=`fade-right opacity-0 rounded shadow-lg mx-auto my-5 w-full p-10 ${frontmatter.bgfs}`>
-            <div class="lex flex-col mx-auto gap-2 justify-center">
-              <div class="w-full">
-                <img
-                  class="rounded-lg"
-                  src={frontmatter.imgstory11}
-                  alt="JejakBahagia"
-                />
-              </div>
-              <div class="text-left font-poppins">
-                <p class=`text-5xl mt-5 md:mt-0 font-cormorant mb-3 ${frontmatter.txsc}`>Tunangan</p>
-                <p class=`max-w-prose ${frontmatter.txth}`>{frontmatter.storyth}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section class="animasi8 overflow-hidden">
       <div class="container mx-auto px-6 py-20">
         <div class=`text-center my-5 mb-10 ${frontmatter.txfs}`>
@@ -584,8 +522,8 @@ if(!frontmatter) {
         <Rsvp color="gray-800" />
           
       </div>
+      <Footerpost />
     </section>
-    <Footerpost />
     <Audio />
     <audio id="myAudio" loop class="hidden">
       <source src=`/assets/music/${frontmatter.music}.mp3` type="audio/mpeg">
