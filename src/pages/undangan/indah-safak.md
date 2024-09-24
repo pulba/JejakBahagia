@@ -2,11 +2,10 @@
 layout: '../demo/wedding-8.astro'
 title: Indah-Safak
 slug: undangan/indah-safak
-type: Indah-Safak
-desc: Indah-Safak
+desc: 'Tema 08'
 countdown: "Jun 24, 2024 08:00:00"
 img:
-  url: '/assets/indah4.webp'
+  url: '/assets/indah2.webp'
   alt: jejak bahagia
 
 # Colors

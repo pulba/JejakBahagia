@@ -27,11 +27,9 @@ if(timer){
         '<div><div class="leading-8 font-josefin">' + detik + '<br><span class="text-xl">Detik</span></div></div>';
             if (selisih < 0) {
             const end = document.createElement("div");
-            end.innerHTML = '<div class="absolute leading-8 text-gray-800 text-2xl inset-x-0 capitalize font-josefin">event telah berakhir</div>';
+            end.innerHTML = '<div class="absolute leading-8 bg-gray-100 text-gray-800 text-xl inset-x-0 capitalize font-josefin border rounded-md w-max px-4 py-2 mx-auto">Acara telah berakhir</div>';
             timer.innerHTML = "";
             timer.appendChild(end);
-            
-            console.log(timer);
             }
 
     });

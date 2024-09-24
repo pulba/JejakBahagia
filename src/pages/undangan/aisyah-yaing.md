@@ -2,14 +2,9 @@
 layout: '../demo/wedding-8.astro'
 slug: 'undangan/aisyah-yaing'
 title: 'Aisyah-Yaing'
-type: 'Basic - 02'
-basic: 1
-desc: 'Tema Basic 02'
-price: 'Rp 49.000'
-unprice: 'Rp 100.000'
-number: 1
+desc: 'Tema 08'
 img:
-  url: '/assets/aisyah6.webp'
+  url: '/assets/aisyah4.webp'
   alt: jejak bahagia
 
 #colors

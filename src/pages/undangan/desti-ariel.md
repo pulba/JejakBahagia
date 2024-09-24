@@ -2,10 +2,7 @@
 layout: '../demo/wedding-3.astro'
 slug: 'undangan/desti-ariel'
 title: 'Desti-Ariel'
-type: 'Basic - 01'
-basic: 1
-desc: 'Tema Basic 01'
-number: 1
+desc: 'Tema 03'
 img:
   url: '/assets/desti1.webp'
   alt: jejak bahagia

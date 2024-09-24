@@ -155,7 +155,7 @@ if(!frontmatter) {
     </div>
   </div>
 </section>
-<main id="myDIV" class="hidden peer-checked:block scroll-smooth">
+<main id="myDIV" class=" peer-checked:block scroll-smooth">
     <section class=`animasi2 relative bg-cover bg-center overflow-hidden before:content-[''] before:bg-gradient-to-t before:to-transparent before:inset-0 before:bg-cover before:absolute ${frontmatter.from} ${frontmatter.hidden}` style={`background-image:url(${frontmatter.imgsc})`}>
       <div class="absolute overflow-hidden z-20 w-full h-[100%] *:absolute *:object-cover *:w-1/2 *:lg:w-1/5">
         <div class="animate-faderight ">
@@ -191,14 +191,14 @@ if(!frontmatter) {
         <img src=`${frontmatter.dekorfs}` class="rotate-90 right-0 top-0" alt="JejakBahagia" />
       </div>
     </div>
-        <div class="container py-32 mx-auto relative z-10">
+        <div class="container py-32 px-6 mx-auto relative z-10">
           <div class=`text-center my-5 ${frontmatter.txsc}`>
             <h2 class="fade-down opacity-0 text-xl md:text-2xl font-bold mt-5 md:mt-0 mb-3">Countdown to</h2>
             <h1 class="fade-right opacity-0 text-center font-nautigal text-5xl md:text-6xl lg:text-8xl">
               Our Happy Day
             </h1>
           </div>
-          <div  data-count={frontmatter.countdown} id="timer" class=`fade-up opacity-0  grid grid-cols-2 md:grid-cols-4 gap-y-8 justify-center text-center items-center mt-20 sm:px-20 max-w-3xl mx-auto *:text-center *:text-4xl *:sm:text-6xl *:font-bold *:p-1 ${frontmatter.txsc}`>
+          <div  data-count={frontmatter.countdown} id="timer" class=`fade-up opacity-0  grid grid-cols-2 md:grid-cols-4 gap-y-8 justify-center gap-4 text-center items-center mt-20 sm:px-20 max-w-3xl mx-auto *:text-center *:text-4xl *:sm:text-6xl *:font-bold *:p-1 *:border *:py-4 *:px-6 *:w-max *:mx-auto ${frontmatter.txsc}`>
           </div>
           <Countdown>
         </div>

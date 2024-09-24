@@ -1,234 +1,289 @@
 ---
 import Noheader from '../layouts/noheader.astro';
 import { Icon } from 'astro-iconify';
-import "@splidejs/splide/css";
 ---
 
-<Noheader title="Pesan">
-  <section class="relative overflow-hidden">
-    <div class="container mx-auto py-16 px-6">
-      <div class="flex flex-col md:flex-row gap-12 max-w-screen-md mx-auto">
-        <div class="w-full h-44 md:h-[75vh] bg-cover bg-center rounded-2xl" style="background-image: url(/assets/img-28.webp);">
+<Noheader title="Pesan"> 
+  <section class="bg-blue-950 relative overflow-hidden bg-cover bg-center bg-[url('/assets/img-28.webp')] before:content-[''] before:absolute before:h-full before:w-full before:bg-gray-900 before:opacity-90">
+    <div class="container relative px-6 py-12 mx-auto">
+          <h1 class="font-josefin text-4xl text-center sm:text-5xl text-white">Let's get started </h1>
+          <p class="font-poppins text-center text-white mx-auto mb-5">Harap isi formulir untuk melanjutkan pemesanan.</p>
+      <form id="orderForm" class="space-y-6 pt-5">
+        <div class="flex flex-col md:flex-row gap-4 item-center justify-center mx-auto max-w-screen-lg text-center *:w-full">
+          <div class="flex flex-row items-center justify-between gap-4">
+            <label for="username" class="w-1/4 text-md font-bold text-white"> Pemesan</label>
+          <input type="text" id="username" name="username"
+            class="block w-3/4 mx-auto px-3 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+            required>
+          </div>
+          <div class="flex flex-row items-center justify-between gap-4">
+            <label for="whatsapp" class="w-1/4 text-md font-bold text-white"> Whatsapp</label>
+          <input type="tel" id="whatsapp" name="whatsapp"
+            class="block w-3/4 mx-auto px-3 py-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+            required>
+          </div>
+          <select id="theme"
+            class="p-3 rounded-md w-full mx-auto border-b-2 bg-blue-900 focus:outline-none focus:ring focus:ring-0 font-bold text-white">
+            <option selected hidden class="text-white">Pilih Tema</option>
+            <option value="Tema 01">Tema 01</option>
+            <option value="Tema 02">Tema 02</option>
+            <option value="Tema 03">Tema 03</option>
+            <option value="Tema 04">Tema 04</option>
+            <option value="Tema 05">Tema 05</option>
+            <option value="Tema 06">Tema 06</option>
+            <option value="Tema 07">Tema 07</option>
+            <option value="Tema 08">Tema 08</option>
+            <option value="Tema 09">Tema 09</option>
+            <option value="Tema 10">Tema 10</option>
+          </select>
         </div>
-        <form id="sendMessage" class="w-full">
-          <div id="page1" class="page">
-            <div class="w-full space-y-4">
-              <h1 class="font-josefin text-5xl text-blue-600">Let's get started </h1>
-              <p class="font-poppins text-lg text-gray-500 mx-auto">Harap isi formulir untuk melanjutkan pemesanan.</p>
-              <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">informasi Pemesan<sup class="text-blue-600">*</sup></p>
-              <div class="grid max-[350px]:grid-cols-1 grid-cols-2 gap-4 *:w-full *:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-                <input id="username" name="username" required type="text" placeholder="Nama Pemesan"/>
-                <input id="email" name="email" required type="email" placeholder="Email Pemesan"/>
-                <input id="whatsapp" name="whatsapp" required type="tel" placeholder="No Whatsapp"/>
-              </div>
-            </div>
-            <p class="font-poppins pt-8 mx-auto capitalize font-bold text-lg">Pilih  Tema Undangan<sup class="text-blue-600">*</sup></p>
-            <select id="theme" class="p-3 rounded-md w-full border-b-2 bg-transparent focus:outline-none focus:ring focus:ring-0">
-              <option selected hidden>Pilih Tema</option>
-              <option value="Basic 01">Tema 01</option>
-              <option value="Basic 02">Tema 02</option>
-              <option value="Basic 03">Tema 03</option>
-              <option value="Basic 04">Tema 04</option>
-              <option value="Basic 05">Tema 05</option>
-              <option value="Basic 06">Tema 06</option>
-              <option value="Basic 07">Tema 07</option>
-              <option value="Basic 08">Tema 08</option>
-              <option value="Basic 09">Tema 09</option>
-              <option value="Basic 10">Tema 10</option>
-            </select>
+        <h5 class="font-bold text-xl text-white text-center font-poppins pt-12">Data Mempelai</h5>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 item-center justify-center w-full max-w-screen-lg mx-auto">
+          <div class="">
+            <h6 class="font-bold text-md text-white font-poppins mb-4">Pengantin Wanita</h6>
+            <label for="femaleFullname" class="font-poppins text-white">Nama Lengkap</label>
+            <input type="text" id="femaleFullname" name="femaleFullname"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="female" class="font-poppins text-white">Nama Panggilan</label>
+            <input type="text" id="female" name="female"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="femaleFather" class="font-poppins text-white">Nama Bapak</label>
+            <input type="text" id="femaleFather" name="femaleFather"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="femaleMother" class="font-poppins text-white">Nama Ibu</label>
+            <input type="text" id="femaleMother" name="femaleMother"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="femaleChild" class="font-poppins text-white">Anak ke</label>
+            <input type="text" id="femaleChild" name="femaleChild"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="femaleAdd" class="font-poppins text-white">Alamat</label>
+            <input type="text" id="femaleAdd" name="femaleAdd"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="femaleMedsos" class="font-poppins text-white">Media Sosial</label>
+            <input type="text" id="femaleMedsos" name="femaleMedsos"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
           </div>
-          <div id="page2" class="page hidden">
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Mempelai Pria<sup class="text-blue-600">*</sup></p>
-            <p class="font-poppins mx-auto capitalize text-xs italic text-gray-600">Sertakan gelar jika ada</p>
-            <div class="grid grid-cols-1 gap-4 *:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="maleFullname" class="data" name="maleFullname" type="text" placeholder="Nama Lengkap"/>
-              <input id="male" class="data" type="text" name="male" placeholder="Nama Panggilan"/>
-              <input id="maleFather" class="data" class="data" name="maleFather" type="text" placeholder="Nama Bapak"/>
-              <input id="maleMother" class="data" name="maleMother" type="text" placeholder="Nama Ibu"/>
-              <input id="maleChild" class="data" name="maleChild" type="tel" placeholder="Anak ke"/>
-              <input id="maleIg" class="data" name="maleIg" type="text" placeholder="Akun Instagram (@)"/>
-            </div>
+          <div class="*:mt-2">
+            <h6 class="font-bold text-md text-white font-poppins mb-4">Pengantin Pria</h6>
+            <label for="maleFullname" class="font-poppins text-white">Nama Lengkap</label>
+            <input type="text" id="maleFullname" name="maleFullname"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="male" class="font-poppins text-white">Nama Panggilan</label>
+            <input type="text" id="male" name="male"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="maleFather" class="font-poppins text-white">Nama Bapak</label>
+            <input type="text" id="maleFather" name="maleFather"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="maleMother" class="font-poppins text-white">Nama Ibu</label>
+            <input type="text" id="maleMother" name="maleMother"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="maleChild" class="font-poppins text-white">Anak ke</label>
+            <input type="text" id="maleChild" name="maleChild"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="maleAdd" class="font-poppins text-white">Alamat</label>
+            <input type="text" id="maleAdd" name="maleAdd"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="maleMedsos" class="font-poppins text-white">Media Sosial</label>
+            <input type="text" id="maleMedsos" name="maleMedsos"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
           </div>
-          <div id="page3" class="page hidden">
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Mempelai Wanita<sup class="text-blue-600">*</sup></p>
-            <p class="font-poppins mx-auto capitalize text-xs italic text-gray-600">Sertakan gelar jika ada</p>
-            <div class="grid grid-cols-1 gap-4 *:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="femaleFullname" class="data" name="femaleFullname" type="text" placeholder="Nama Lengkap"/>
-              <input id="female" class="data" name="female" type="text" placeholder="Nama Panggilan"/>
-              <input id="femaleFather" class="data" name="femaleFather" type="text" placeholder="Nama Bapak"/>
-              <input id="femaleMother" class="data" name="femaleMother" type="text" placeholder="Nama Ibu"/>
-              <input id="femaleChild" class="data" name="femaleChild" type="tel" placeholder="Anak ke"/>
-              <input id="femaleIg" class="data" name="femaleIg" type="text" placeholder="Akun Instagram (@)"/>
-            </div>
+          <div class="*:mt-2">
+            <h6 class="font-bold text-md text-white font-poppins mb-4">Akad</h6>
+            <label for="date" class="font-poppins text-white">Tanggal Pernikahan</label>
+            <input type="date" id="date" name="date"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="venue" class="font-poppins text-white">Tempat Pernikahan</label>
+            <input type="text" id="venue" name="venue"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="contoh: Rumah Mempelai Wanita" required>
+            <label for="address" class="font-poppins text-white">Alamat Pernikahan</label>
+            <input type="text" id="address" name="address"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="contoh: jl. kencana, desa melayu kec. dst" required>
+            <label for="maps" class="font-poppins text-white">Maps Pernikahan</label>
+            <input type="text" id="maps" name="maps"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="time" class="font-poppins text-white">Waktu Akad</label>
+            <input type="time" id="time" name="time"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" required>
           </div>
-          <div id="page4" class="page hidden">
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Akad Nikah<sup class="text-blue-600">*</sup></p>
-            <div class="grid grid-cols-1 gap-4 *:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="date" class="data" name="date" type="date" />
-              <input id="time" class="data" name="time" type="text" placeholder="08:00 WIB - 10:00 WIB"/>
-              <input id="address" class="data" name="address" type="text" placeholder="Alamat Lengkap"/>
-              <input id="maps" class="data" name="maps" type="text" placeholder="Link Google Maps"/>
-            </div>
+          <div class="*:mt-2">
+            <h6 class="font-bold text-md text-white font-poppins mb-4">Resepsi</h6>
+            <label for="datesc" class="font-poppins text-white">Tanggal Resepsi</label>
+            <input type="date" id="datesc" name="datesc"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="venuesc" class="font-poppins text-white">Tempat Resepsi</label>
+            <input type="text" id="venuesc" name="venuesc"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="contoh: Rumah Mempelai Pria" required>
+            <label for="addresssc" class="font-poppins text-white">Alamat Resepsi</label>
+            <input type="text" id="addresssc" name="addresssc"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="contoh: jl. kencana, desa melayu kec. dst" required>
+            <label for="maspsc" class="font-poppins text-white">Maps Resepsi</label>
+            <input type="text" id="maspsc" name="maspsc"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              required>
+            <label for="timesc" class="font-poppins text-white">Waktu Akad</label>
+            <input type="time" id="timesc" name="timesc"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" required>
           </div>
-          <div id="page5" class="page hidden">
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Resepsi Pernikahan<sup class="text-blue-600">*</sup></p>
-            <div class="grid grid-cols-1 gap-4 *:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="dateSc" class="data" name="datesc" type="date" />
-              <input id="timeSc" class="data" name="timesc" type="text" placeholder="08:00 WIB - 10:00 WIB"/>
-              <input id="addressSc" class="data" name="addresssc" type="text" placeholder="Alamat Lengkap"/>
-              <input id="mapsSc" class="data" name="mapssc" type="text" placeholder="Link Google Maps"/>
-            </div>
+          <div class="*:mt-2">
+            <h6 class="font-bold text-md text-white font-poppins mb-4">Amplop Digital</h6>
+            <label for="bank" class="font-poppins text-white">Nomor Rekening</label>
+            <input type="text" id="bank" name="bank"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="contoh: BRI/12345567890/surya kencana" required>
+            <label for="wallet" class="font-poppins text-white">Nomor E-wallet</label>
+            <input type="text" id="wallet" name="wallet"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="contoh: Gopay/12345567890/surya kencana" required>
+            <label for="music" class="font-poppins text-white">Musik/Lagu</label>
+            <input type="text" id="music" name="music"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm" placeholder="Link YT / Judul Lagu"
+              required>
+            <label for="photo" class="font-poppins text-white">Link Drive Foto Prewedding</label>
+            <input type="text" id="photo" name="photo"
+              class="block w-full px-3 py-3 mt-2 mb-3 border border-gray-300 w-full rounded-md shadow-sm focus:outline-none focus:ring-sky-500 focus:border-sky-500 sm:text-sm"
+              placeholder="Kosongkan/Kirim WA">
+            <label for="quote" class="font-poppins text-white">Quote</label>
+            <textarea id="quote" rows="4" name="quote"
+              class="mt-2 block mt-2 p-5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg border border-gray-300 focus:outline-none"
+              placeholder="Bisa kirim Whatsapp"></textarea>
           </div>
-          <div id="page6" class="page hidden">
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Amplop Digital  <br><span class="italic">(Bank, No. Rekening, Penerima)</span></p>
-            <div class="grid grid-cols-1 gap-4 mt-2 *:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="bank" class="data" name="bank" type="tel" placeholder="BCA 12345678 a/n Mempelai"/>
-              <input id="ewallet" class="data" name="ewallet" type="tel" placeholder="GOPAY 12345678 a/n Mempelai"/>
-            </div>
-          </div>
-          <div id="page7" class="page hidden space-y-3">
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Foto / Gallery</p>
-            <div class="*:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="photo" class="data" name="photo" type="text" placeholder="Link Google Drive/kirim WA"/>
-            </div>
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Quote</p>
-            <div class="*:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <textarea id="quote" rows="4" name="content" class="mt-2 block mt-2 p-5 w-full text-sm text-gray-800 bg-gray-50 rounded-lg border border-gray-300 focus:outline-none" placeholder="Bisa kirim Whatsapp"></textarea>
-            </div>
-            <p class="font-poppins mx-auto capitalize font-bold text-lg text-gray-800">Pilihan Lagu</p>
-            <div class="*:p-3 *:rounded-md *:w-full *:border-b-2 *:bg-transparent focus:*:outline-none focus:*:ring focus:*:ring-0">
-              <input id="music" class="data" name="music" type="text" placeholder="Link Youtube"/>
-            </div>
-          </div>
-          <div class="flex flex-row justify-center items-center pt-12 flex flex-row gap-4">
-            <button id="backBtn" type="button" class="hidden py-2 px-6 rounded-full bg-gray-800 text-white w-max">Kembali</button>
-            <button id="nextBtn" type="submit" class="py-2 px-6 rounded-full bg-blue-600 text-white w-max">Lanjut</button>
-            <button id="sendBtn" type="submit" class="hidden py-2 px-6 rounded-full bg-blue-600 text-white w-max">Kirim</button>
-          </div>
-        </form>
-      </div>
+        </div>
+        <div class="text-center mt-12">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full font-poppins tracking-wider font-bold hover:bg-blue-700">
+              Kirim Data
+          </button>
+        </div>
+      </form>
       <div class="w-full flex max-[350px]:flex-col gap-4 flex-row justify-between max-w-screen-md mx-auto mt-16">
         <a href="/">
-          <div class="py-2 px-4 rounded-full bg-gray-800 text-white w-max flex flex-row gap-[1px]"><Icon name="mdi:home" class="h-5 w-5" />Home</div>
+          <div class="py-2 px-4 rounded-full bg-gray-800 text-white w-max flex flex-row gap-[1px]">
+            <Icon name="mdi:home" class="h-5 w-5" />Home
+          </div>
         </a>
-        <a href="https://wa.me/6281532094978?text=Hallo Admin, saya ingin bertanya tentang *Undangan Digital* dong!" class="w-fit py-2 px-4 rounded-full bg-gray-800 flex flex-row items-center justify-center gap-[1px] text-center text-white"><Icon name="mdi:whatsapp" class="w-5 h-5 text-white" />Tanya Admin</a>
+        <a href="https://wa.me/6281532094978?text=Hallo Admin, saya ingin bertanya tentang *Pengisian Form Undangan Digital* dong!"
+          class="w-fit py-2 px-4 rounded-full bg-gray-800 flex flex-row items-center justify-center gap-[1px] text-center text-white">
+          <Icon name="mdi:whatsapp" class="w-5 h-5 text-white" />Tanya Admin
+        </a>
       </div>
     </div>
   </section>
+  
+<script>
 
-  <script>
+document.getElementById('orderForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Mencegah form submit secara default
 
-document.getElementById('sendMessage').addEventListener('submit', function(e) {
-        e.preventDefault(); 
-        sendMessage(); 
-        location.reload(); 
-    });
-    // elemen tombol
-      const backBtn = document.getElementById('backBtn');
-      const nextBtn = document.getElementById('nextBtn');
-      const sendBtn = document.getElementById('sendBtn');
-      const pages = document.querySelectorAll('.page');
+  // Mengambil data dari form
+  const username = document.getElementById('username')?.value || '';
+  const whatsapp = document.getElementById('whatsapp')?.value || '';
+  const theme = document.getElementById('theme')?.value || '';
 
-      let currentPage = 0;
+  const femaleFullname = document.getElementById('femaleFullname')?.value || '';
+  const female = document.getElementById('female')?.value || '';
+  const femaleFather = document.getElementById('femaleFather')?.value || '';
+  const femaleMother = document.getElementById('femaleMother')?.value || '';
+  const femaleChild = document.getElementById('femaleChild')?.value || '';
+  const femaleMedsos = document.getElementById('femaleMedsos')?.value || '';
 
-      backBtn.classList.add('hidden');
+  const maleFullname = document.getElementById('maleFullname')?.value || '';
+  const male = document.getElementById('male')?.value || '';
+  const maleFather = document.getElementById('maleFather')?.value || '';
+  const maleMother = document.getElementById('maleMother')?.value || '';
+  const maleChild = document.getElementById('maleChild')?.value || '';
+  const maleMedsos = document.getElementById('maleMedsos')?.value || '';
 
-      backBtn.addEventListener('click', function() {
-    if (currentPage > 0) {
-        // Check if there are any required inputs with empty values
-        const requiredInputs = document.querySelectorAll('[required]');
-        let requiredEmpty = false;
-        requiredInputs.forEach(input => {
-            if (!input.value.trim()) {
-                requiredEmpty = true;
-                // Remove the 'required' attribute
-                input.removeAttribute('required');
-            }
-        });
+  const date = document.getElementById('date')?.value || '';
+  const venue = document.getElementById('venue')?.value || '';
+  const address = document.getElementById('address')?.value || '';
+  const time = document.getElementById('time')?.value || '';
+  const maps = document.getElementById('maps')?.value || '';
 
-        if (!requiredEmpty) {
-            // Proceed with going back to the previous page
-            pages[currentPage].classList.add('hidden');
-            currentPage--;
-            pages[currentPage].classList.remove('hidden');
+  const datesc = document.getElementById('datesc')?.value || '';
+  const venuesc = document.getElementById('venuesc')?.value || '';
+  const timesc = document.getElementById('timesc')?.value || '';
+  const addresssc = document.getElementById('addresssc')?.value || '';
+  const mapssc = document.getElementById('mapssc')?.value || '';
 
-            if (currentPage === 0) {
-                backBtn.classList.add('hidden');
-            }
-            nextBtn.classList.remove('hidden');
-            sendBtn.classList.add('hidden');
-        }
-    }
+  const bank = document.getElementById('bank')?.value || '';
+  const wallet = document.getElementById('wallet')?.value || '';
+  const music = document.getElementById('music')?.value || '';
+  const photo = document.getElementById('photo')?.value || '';
+  const quote = document.getElementById('quote')?.value || '';
+
+  // Memastikan semua data penting terisi
+  if (!username || !whatsapp || theme === 'Pilih Tema') {
+    alert('Harap isi semua field yang diperlukan.');
+    return;
+  }
+
+  // Membuat URL WhatsApp dengan semua data
+  const url = `https://web.whatsapp.com/send?phone=6281532094978&text=Berikut%20data%20pemesanan%20undangan%20digital%3A%0A
+  Nama%20Pemesan%3A%20*${username}*%0A
+  Whatsapp%3A%20*${whatsapp}*%0A
+  Tema%3A%20*${theme}*%0A%0A
+
+  Pengantin%20Wanita%0A
+  Nama%20Lengkap%3A%20*${femaleFullname}*%0A
+  Nama%20Panggilan%3A%20*${female}*%0A
+  Nama%20Bapak%3A%20*${femaleFather}*%0A
+  Nama%20Ibu%3A%20*${femaleMother}*%0A
+  Anak%20Ke%3A%20*${femaleChild}*%0A
+  Akun%20Medsos%3A%20*${femaleMedsos}*%0A%0A
+
+  Pengantin%20Pria%0A
+  Nama%20Lengkap%3A%20*${maleFullname}*%0A
+  Nama%20Panggilan%3A%20*${male}*%0A
+  Nama%20Bapak%3A%20*${maleFather}*%0A
+  Nama%20Ibu%3A%20*${maleMother}*%0A
+  Anak%20Ke%3A%20*${maleChild}*%0A
+  Akun%20Medsos%3A%20*${maleMedsos}*%0A%0A
+
+  Akad%20Nikah%0A
+  Tanggal%20Akad%3A%20*${date}*%0A
+  Tempat%20Akad%3A%20*${venue}*%0A
+  Alamat%20Akad%3A%20*${address}*%0A
+  Waktu%20Akad%3A%20*${time}*%0A
+  Link%20Maps%3A%20*${maps}*%0A%0A
+
+  Resepsi%20Nikah%0A
+  Tanggal%20Resepsi%3A%20*${datesc}*%0A
+  Tempat%20Resepsi%3A%20*${venuesc}*%0A
+  Alamat%20Resepsi%3A%20*${addresssc}*%0A
+  Waktu%20Resepsi%3A%20*${timesc}*%0A
+  Link%20Maps%3A%20*${mapssc}*%0A%0A
+
+  Amplop%20Digital%0A
+  Rekening%3A%20*${bank}*%0A
+  E-Wallet%3A%20*${wallet}*%0A%0A
+
+  Musik%0ALink%20Musik%3A%20*${music}*%0A%0A
+  Foto%20Prewedding%0ALink%20Foto%3A%20*${photo}*%0A%0A
+  Quote%3A%20*${quote}*`;
+
+  window.open(url, '_blank');
 });
-
-
-    nextBtn.addEventListener('click', function() {
-        
-          const sendMessage = document.getElementById('sendMessage');
-          console.log(sendMessage.checkValidity());
-          if (sendMessage.checkValidity()) {
-            pages[currentPage].classList.add('hidden');
-              currentPage++;
-              pages[currentPage].classList.remove('hidden');
-              backBtn.classList.remove('hidden');
-              
-
-            const dataList = document.querySelectorAll('.data');
-            dataList.forEach(element => {
-              if (element.offsetParent !== null && window.getComputedStyle(element).display !== 'none') {
-              element.setAttribute("required", "");
-              }
-            });
-            if (currentPage === pages.length - 1) {
-                  nextBtn.classList.add('hidden');
-                  sendBtn.classList.remove('hidden');
-              }
-          }
-          
-      });
-
-
-      //send form
-      function sendMessage() {
-        const username = document.getElementById('username').value;
-        const email = document.getElementById('email').value;
-        const whatsapp = document.getElementById('whatsapp').value;
-        const theme = document.getElementById('theme').value;
-
-        const maleFullname = document.getElementById('maleFullname').value;
-        const male = document.getElementById('male').value;
-        const maleFather = document.getElementById('maleFather').value;
-        const maleMother = document.getElementById('maleMother').value;
-        const maleChild = document.getElementById('maleChild').value;
-        const maleIg = document.getElementById('maleIg').value;
-
-        const femaleFullname = document.getElementById('femaleFullname').value;
-        const female = document.getElementById('female').value;
-        const femaleFather = document.getElementById('femaleFather').value;
-        const femaleMother = document.getElementById('femaleMother').value;
-        const femaleChild = document.getElementById('femaleChild').value;
-        const femaleIg = document.getElementById('femaleIg').value;
-
-        const date = document.getElementById('date').value;
-        const time = document.getElementById('time').value;
-        const address = document.getElementById('address').value;
-        const maps = document.getElementById('maps').value;
-
-        const dateSc = document.getElementById('dateSc').value;
-        const timeSc = document.getElementById('timeSc').value;
-        const addressSc = document.getElementById('addressSc').value;
-        const mapsSc = document.getElementById('mapsSc').value;
-
-        const bank = document.getElementById('bank').value;
-        const ewallet = document.getElementById('ewallet').value;
-        const photo = document.getElementById('photo').value;
-        const quote = document.getElementById('quote').value;
-        const music = document.getElementById('music').value;
-
-        const url = "https://api.whatsapp.com/send?phone=6281532094978&text=Hallo%20admin%20JejakBahagia%20saya%20mau%20buat%20undangan%20digital%20dengan%0A%0ANama%20Pemesan%3A%20*"+ username +"*%0AE-mail%3A%20*"+ email +"*%0ANo%20Whatsapp%3A%20*"+ whatsapp +"*%0APilihan%20Tema%3A%20*"+ theme +"*%0A%0ABerikut%20data%20pemesanan%20undangan%20digital%20%3A%0A*Penganti%20Pria*%0ANama%20Lengkap%3A%20*"+ maleFullname +"*%0ANama%20Panggilan%3A%20*"+ male +"*%0ANama%20Bapak%3A%20*"+ maleFather +"*%0ANama%20Ibu%3A%20*"+ maleMother +"*%0AAnak%20ke%3A%20*"+ maleChild +"*%0AAkun%20Instagram%3A%20*"+ maleIg +"*%0A%0A*Penganti%20Wanita*%0ANama%20Lengkap%3A%20*"+ femaleFullname +"*%0ANama%20Panggilan%3A%20*"+ female +"*%0ANama%20Bapak%3A%20*"+ femaleFather +"*%0ANama%20Ibu%3A%20*"+ femaleMother +"*%0AAnak%20ke%3A%20*"+ femaleChild +"*%0AAkun%20Instagram%3A%20*"+ femaleIg +"*%0A%0A*Akad%20Nikah*%0AHari%20dan%20Tanggal%20Acara%3A%20*"+ date +"*%0AWaktu%3A%20*"+ time +"*%0AAlamat%3A%20*"+ address +"*%0ALink%20Maps%3A%20*"+ maps +"*%0A%0A*Resepsi%20Nikah*%0AHari%20dan%20Tanggal%20Acara%3A%20*"+ dateSc +"*%0AWaktu%3A%20*"+ timeSc +"*%0AAlamat%3A%20*"+ addressSc +"*%0ALink%20Maps%3A%20*"+ mapsSc +"*%0A%0A*Amplop%20Digital*%0ARekening%3A%20*"+ bank +"*%0AE-Wallet%3A%20*"+ ewallet +"*%0A%0A%0A*Foto%20Prewedding*%0ALink%20Foto%20Prewedding%3A%20*"+ photo+"*%0A%0A*Music*%0ALink%20Musik%3A%20*"+ music +"*%0A%0A%0A*Love%20Story*%0AStory%3A%20*"+ quote +"*"
-
-        window.open(url);
-      }
 
 </script>
 </Home>

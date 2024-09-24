@@ -2,8 +2,7 @@
 layout: '../demo/wedding-7.astro'
 title: Feny-Tito
 slug: undangan/feny-tito
-type: Feny-Tito
-desc: Feny-Tito
+desc: 'Tema 07'
 img:
   url: '/assets/oca-tito2.webp'
   alt: jejak bahagia

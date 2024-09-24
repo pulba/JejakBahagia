@@ -5,89 +5,36 @@ import '@fontsource/the-nautigal';
 import Logo from './logo.astro';
 import { Icon } from 'astro-iconify';
 
-const links = [
-  { name: "Home", href: "/", current: true },
-  { name: "Katalog", href: "/katalog", current: true },
-  { name: "Harga", href: "/harga", current: true },
-  { name: "Contact", href: "/contact", current: true },
-];
 ---
 
-<nav class="px-6 py-6 mx-auto shadow">
-  <div class="container mx-auto md:flex items-center justify-between">
-    <div class="flex items-center justify-between">
-      <Logo file="JejakBahagia" />
-      <div class="md:hidden">
-        <svg
-          id="icon1"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="gray-800"
-          class="size-6 stroke-gray-800">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
-        </svg>
-        <svg
-          id="icon2"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="gray-800"
-          class="size-6 hidden stroke-gray-800">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18 18 6M6 6l12 12"></path>
-        </svg>
-      </div>
-    </div>
-    <ul
-      id="menu"
-      class="flex flex-col md:flex-row gap-6 mt-8 md:mt-0 hidden md:flex">
-      {
-        links.map((link) => (
-          <li class="border-b pb-2 md:border-none md:pb-0">
-            <a
-              href={link.href}
-              class="text-gray-800 font-poppins hover:text-blue-600 hover:font-bold">
-              {link.name}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-    <div id="btn" class="relative w-max mt-5 md:mt-0 hidden md:flex justify-end">
-      <a href="https://wa.me/6281532094978?text=Hallo kak, saya buat undangan dong!" class="flex flex-row items-center justify-center gap-1 px-4 py-3 rounded-md tracking-wider text-center text-white transition-colors duration-300 bg-blue-700 hover:bg-blue-700">Konsultasi<Icon name="mdi:whatsapp" class="w-5 h-5 text-white" /></a>
-    </div>
+<nav x-data="{ mobileMenuIsOpen: false }" @click.away="mobileMenuIsOpen = false" class="flex items-center justify-between bg-neutral-50 border-b border-neutral-300 px-6 py-4 dark:border-neutral-700 dark:bg-neutral-900" aria-label="penguin ui menu">
+  <Logo file="JejakBahagia" />
+	<!-- Desktop Menu -->
+	<ul class="hidden items-center gap-4 md:flex *:w-full *:text-lg *:text-black *:focus:none">
+		<a href="/" class="" aria-current="page"><li class="py-4">Home</li></a>
+		<a href="katalog" class=""><li class="py-4">Katalog</li></a>
+		<a href="harga" class=""><li class="py-4">Harga</li></a>
+		<a href="contact" class=""><li class="py-4">Contact</li></a>
+	</ul>
+  <div id="btn" class="relative w-max mt-5 md:mt-0 hidden md:flex justify-end">
+    <a href="https://wa.me/6281532094978?text=Hallo kak, saya mau konsultasi terkait undangan digital dong!" class="flex flex-row items-center justify-center gap-1 px-4 py-3 rounded-md tracking-wider text-center text-white transition-colors duration-300 bg-blue-700 hover:bg-blue-700">Konsultasi<Icon name="mdi:whatsapp" class="w-5 h-5 text-white" /></a>
   </div>
+	<!-- Mobile Menu Button -->
+	<button @click="mobileMenuIsOpen = !mobileMenuIsOpen" :aria-expanded="mobileMenuIsOpen" :class="mobileMenuIsOpen ? 'fixed top-6 right-6 z-20' : null" type="button" class="flex text-neutral-600 dark:text-neutral-300 md:hidden" aria-label="mobile menu" aria-controls="mobileMenu">
+		<svg x-cloak x-show="!mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+		</svg>
+		<svg x-cloak x-show="mobileMenuIsOpen" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+		</svg>
+	</button>
+	<!-- Mobile Menu -->
+	<ul x-cloak x-show="mobileMenuIsOpen" x-transition:enter="transition motion-reduce:transition-none ease-out duration-300" x-transition:enter-start="-translate-y-full" x-transition:enter-end="translate-y-0" x-transition:leave="transition motion-reduce:transition-none ease-out duration-300" x-transition:leave-start="translate-y-0" x-transition:leave-end="-translate-y-full" id="mobileMenu" class="fixed max-h-svh overflow-y-auto inset-x-0 top-0 z-10 flex flex-col divide-y divide-neutral-300 rounded-b-md border-b border-neutral-300 bg-neutral-50 px-6 pb-6 pt-20 dark:divide-neutral-700 dark:border-neutral-700 dark:bg-neutral-900 md:hidden *:w-full *:text-lg *:text-black *:focus:none">
+		<a href="/" class="" aria-current="page"><li class="py-4">Home</li></a>
+		<a href="katalog" class=""><li class="py-4">Katalog</li></a>
+		<a href="harga" class=""><li class="py-4">Harga</li></a>
+		<a href="contact" class=""><li class="py-4">Contact</li></a>
+	</ul>
 </nav>
-<script>
-  document.getElementById("icon1").addEventListener("click", function () {
-    document.getElementById("icon1").classList.add("hidden");
-    document.getElementById("icon2").classList.remove("hidden");
-    document.getElementById("menu").classList.remove("hidden");
-    document.getElementById("btn").classList.remove("hidden");
-  });
-  document.getElementById("icon2").addEventListener("click", function () {
-    document.getElementById("icon2").classList.add("hidden");
-    document.getElementById("icon1").classList.remove("hidden");
-    document.getElementById("menu").classList.add("hidden");
-    document.getElementById("btn").classList.add("hidden");
-  });
 
-  const links = Array.from(
-    document.querySelectorAll<HTMLAnchorElement>("#menu a")
-  );
 
-  links.forEach((link) => {
-    link.addEventListener("click", function () {
-      links.forEach((l) => l.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
-</script>
